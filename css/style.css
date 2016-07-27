@@ -623,10 +623,10 @@ header {
 
 #about {
   margin-top: 50px;
-  margin-right: -100px;
+  margin-right: auto;
   margin-bottom: 100px;
-  margin-left: calc((100% - 400px * 2 - 100px) / 2);
-  min-width: 1080px;
+  margin-left: auto;
+  width: 1080px;
 }
 #about:after {
   clear: both;
@@ -636,7 +636,8 @@ header {
 
 .about_column {
   float: left;
-  margin-right: 100px;
+  margin-left: 90px;
+  margin-right: 10px;
   width: 400px;
 }
 

@@ -68,17 +68,18 @@ header{
 #about{
   margin:{
     top: 50px;
-    right: -$about_column__mr;
+    right: auto;
     bottom: 100px;
-    left: calc((100% - #{$about_column__w} * 2 - #{$about_column__mr}) / 2);
+    left: auto;
   }
-  min-width: $pc__w;
+  width: $pc__w;
   @include clearfix;
 }
 
 .about_column{
   float: left;
-  margin-right: $about_column__mr;
+  margin-left: ($pc__w - 2 * $about_column__w - $about_column__mr) / 2;
+  margin-right: $about_column__mr - ($pc__w - 2 * $about_column__w - $about_column__mr) / 2;
   width: $about_column__w;
 }
 
