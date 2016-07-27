@@ -8,6 +8,7 @@
  * 1. Add the correct display in Edge, IE, and Firefox.
  * 2. Add the correct display in IE.
  */
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 article,
 aside,
 details,
@@ -531,6 +532,13 @@ textarea,
 
 [hidden][aria-hidden="false"]:focus {
   clip: auto;
+}
+
+html {
+  background-color: #fdfdfd;
+  color: #020202;
+  font-family: 'Noto Sans Japanese', sans-serif;
+  font-size: 16px;
 }
 
 /* layout */
