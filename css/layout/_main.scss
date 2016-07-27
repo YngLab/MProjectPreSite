@@ -1,0 +1,143 @@
+header{
+  min-width: $pc__w;
+}
+
+.header_comming{
+  height: $header_comming__h;
+  margin: 0;
+  width: 100%;
+}
+
+.header_logos{
+  @include clearfix;
+}
+
+.header_logo{
+  float: left;
+  width: 50%;
+}
+
+.header_logoImage{
+  width: $pc__w / 2;
+}
+
+.header_logo-kids{
+  text-align: right;
+}
+
+.header_buttons{
+  border-bottom: $header_buttons__bbColor 3px solid ;
+  height: $header_buttons__h;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  @include clearfix;
+}
+
+.header_buttons-lets{
+  margin:{
+    bottom: 0;
+    left: calc(50% - 208px / 2);
+    right: 0;
+    top: ($header_buttons__h - 39) / 2 - 1px;
+  }
+  position: absolute;
+}
+
+.header_button{
+  float: left;
+  height: $header_buttons__h;
+  width: 50%;
+}
+
+.header_buttonInner{
+  border-bottom: $header_buttons__bbColor 3px solid ;
+  display: block;
+  height: $header_buttons__h;
+  width: $pc__w / 2;
+}
+
+.header_buttonInner-first{
+  margin: 0 0 0 auto;
+}
+
+.header_buttonImage{
+  margin: 19px 0 0 0;
+}
+
+#about{
+  margin:{
+    top: 50px;
+    right: -$about_column__mr;
+    bottom: 100px;
+    left: calc((100% - #{$about_column__w} * 2 - #{$about_column__mr}) / 2);
+  }
+  min-width: $pc__w;
+  @include clearfix;
+}
+
+.about_column{
+  float: left;
+  margin-right: $about_column__mr;
+  width: $about_column__w;
+}
+
+.about_logo,
+.about_map{
+  display: block;
+  margin: 0 auto 50px auto;
+}
+
+.about_info{
+  margin-bottom: 50px;
+}
+
+.about_introImage{
+  display: block;
+  height: auto;
+  margin-bottom: 30px;
+  width: $about_column__w;
+}
+
+#movie{
+  font-weight: bold;
+  margin-bottom: 100px;
+  min-width: $pc__w;
+  text-align: center;
+}
+
+.movie_youtube{
+  height: $pc__w / 16 * 9;
+  width: $pc__w;
+}
+
+#events{
+  text-align: center;
+}
+
+.event{
+  margin: 0 auto 50px auto;
+  text-align: left;
+  width: $pc__w;
+  @include clearfix;
+}
+
+.event_image{
+  float: left;
+  height: auto;
+  margin-right: 50px;
+  width: $event_image__w;
+}
+
+.event_detail{
+  float: left;
+}
+
+.event_info-left{
+  margin-right: 50px;
+}
+
+.event_intro{
+  float: left;
+  width: $pc__w - $event_image__w - 50px;
+}

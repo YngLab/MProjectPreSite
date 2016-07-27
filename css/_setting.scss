@@ -1,8 +1,38 @@
-$pc-width: 1080px;
-$pc-fontSize_base: 16px;
+$h2__fontSize: 24px;
+$h3__fontSize: 21px;
 
-$g-bgc: #fdfdfd;
-$g-fontColor: #020202;
+$pc__w: 1080px;
+$pc__fontSize: 16px;
 
-$g-color_kids: #88C23F;
-$g-color_future: #E48E13;
+$g__bgc: #fdfdfd;
+$g__fontColor: #020202;
+
+$g__color-kids: #88C23F;
+$g__color-future: #E48E13;
+
+$header_comming__h: 80px;
+
+$header_comming__bgc: #4D4D4D;
+$header_comming__fontColor: #fdfdfd;
+$header_comming__fontSize: 28px;
+$header_comming-em__fontSize: 48px;
+
+$header_buttons__bbColor: #959595;
+$header_buttons__h: 70px;
+
+$header_buttons-lets__fontSize: 26px;
+
+$header_buttonInnner__hoverBgc: #E2E2E2;
+
+$about_column__w: 400px;
+$about_column__mr: 100px;
+
+$event_image__w: 400px;
+
+@mixin clearfix {
+  &:after{
+    clear: both;
+    content: "";
+    display: block;
+  }
+}

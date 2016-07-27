@@ -1,10 +1,18 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
 html{
-  background-color: $g-bgc;
-  color: $g-fontColor;
+  background-color: $g__bgc;
+  color: $g__fontColor;
   font:{
     family: 'Noto Sans Japanese', sans-serif;
-    size: $pc-fontSize_base;
+    size: $pc__fontSize;
   }
+  letter-spacing: .2em;
+}
+
+h2{
+  font-size: $h2__fontSize;
+  margin-bottom: 50px;
+  text-decoration: underline;
+  width: $pc__w;
 }

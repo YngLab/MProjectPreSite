@@ -1,0 +1,30 @@
+.header_comming{
+  background-color: $header_comming__bgc;
+  color: $header_comming__fontColor;
+  font-size: $header_comming__fontSize;
+  font-weight: normal;
+  text-align: center;
+}
+
+.header_comming-em{
+  font-size: $header_comming-em__fontSize;
+}
+
+.header_logo-kids{
+  background-color: $g__color-kids;
+}
+
+.header_logo-future{
+  background-color: $g__color-future;
+}
+
+.header_buttons-lets{
+  font-size: $header_buttons-lets__fontSize;
+  font-weight: 100;
+}
+
+.header_buttonInner{
+  &:hover{
+    background-color: $header_buttonInnner__hoverBgc;
+  }
+}
