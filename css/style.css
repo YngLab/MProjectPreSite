@@ -676,7 +676,7 @@ header {
 }
 
 .event {
-  margin: 0 auto 50px auto;
+  margin: 0 auto 70px auto;
   text-align: left;
   width: 1080px;
 }
@@ -684,6 +684,10 @@ header {
   clear: both;
   content: "";
   display: block;
+}
+
+.event_title {
+  margin: 0 0 5px 0;
 }
 
 .event_image {
@@ -695,6 +699,7 @@ header {
 
 .event_detail {
   float: left;
+  margin: 10px 0;
 }
 
 .event_info-left {
@@ -703,6 +708,7 @@ header {
 
 .event_intro {
   float: left;
+  margin: 10px 0;
   width: 630px;
 }
 
@@ -782,14 +788,15 @@ header {
   color: #fdfdfd;
   font-size: 14px;
   line-height: 40px;
+  min-width: 1080px;
   padding: 25px;
   padding-bottom: 50px;
   width: 100%;
 }
 
 .contact_inner {
-  margin: 0 auto 0 auto;
-  width: 1080px;
+  margin: 5px auto;
+  max-width: 1080px;
 }
 
 .contact_title {
@@ -797,7 +804,7 @@ header {
 }
 
 .contact_formTable {
-  width: 1080px;
+  width: 95%;
 }
 .contact_formTable tr {
   margin-bottom: 10px;
@@ -813,7 +820,7 @@ header {
 
 .contact_inputForm-long {
   height: 120px;
-  width: 100%;
+  width: 98%;
 }
 
 .contact_table-head {
@@ -825,6 +832,7 @@ footer {
   color: #fdfdfd;
   font-size: 12px;
   line-height: 1em;
+  min-width: 1080px;
   width: 100%;
 }
 

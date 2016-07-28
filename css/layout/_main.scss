@@ -117,10 +117,13 @@ header{
 }
 
 .event{
-  margin: 0 auto 50px auto;
+  margin: 0 auto 70px auto;
   text-align: left;
   width: $pc__w;
   @include clearfix;
+}
+.event_title{
+  margin: 0 0 5px 0;
 }
 
 .event_image{
@@ -132,6 +135,7 @@ header{
 
 .event_detail{
   float: left;
+  margin: 10px 0;
 }
 
 .event_info-left{
@@ -140,6 +144,7 @@ header{
 
 .event_intro{
   float: left;
+  margin: 10px 0;
   width: $pc__w - $event_image__w - 50px;
 }
 
@@ -210,14 +215,15 @@ header{
   color: $contact__fontColor;
   font-size: $contact__fontSize;
   line-height: 40px;
+  min-width: 1080px;
   padding: 25px;
   padding-bottom: 50px;
   width: 100%;
 }
 
 .contact_inner{
-  margin: 0 auto 0 auto;
-  width: $pc__w;
+  margin: 5px auto;
+  max-width: $pc__w;
 }
 
 .contact_title{
@@ -225,7 +231,7 @@ header{
 }
 
 .contact_formTable{
-  width: $pc__w;
+  width: 95%;
   tr{
     margin-bottom: 10px;
   }
@@ -241,7 +247,7 @@ header{
 
 .contact_inputForm-long{
   height: 120px;
-  width: 100%;
+  width: 98%;
 }
 
 .contact_table-head{
@@ -253,6 +259,7 @@ footer{
   color: $footer__fontColor;
   font-size: $footer__fontSize;
   line-height: 1em;
+  min-width: 1080px;
   width: 100%;
 }
 
