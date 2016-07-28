@@ -5,7 +5,7 @@ html{
   color: $g__fontColor;
   font:{
     family: 'Noto Sans Japanese', sans-serif;
-    size: $pc__fontSize;
+    size: $g__fontSize;
   }
   letter-spacing: .2em;
 }
@@ -14,5 +14,5 @@ h2{
   font-size: $h2__fontSize;
   margin: 0 auto 50px auto;
   text-decoration: underline;
-  width: $pc__w;
+  width: $g__w;
 }
