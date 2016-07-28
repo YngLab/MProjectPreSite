@@ -907,7 +907,3 @@ footer {
 .contact-spamBlock {
   display: none;
 }
-.contact-spamBlock:after {
-  content: "@";
-  display: inline;
-}

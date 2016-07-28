@@ -62,8 +62,4 @@
 
 .contact-spamBlock{
   display: none;
-  &:after{
-    content: "@";
-    display: inline;
-  }
 }

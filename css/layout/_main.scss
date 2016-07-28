@@ -1,5 +1,5 @@
 header{
-  min-width: $g__w;
+  min-width: $pc__w;
 }
 
 .header_comming{
@@ -18,7 +18,7 @@ header{
 }
 
 .header_logoImage{
-  width: $g__w / 2;
+  width: $pc__w / 2;
 }
 
 .header_logo-kids{
@@ -54,7 +54,7 @@ header{
   border-bottom: $header_buttons__bbColor 3px solid ;
   display: block;
   height: $header_buttons__h;
-  width: $g__w / 2;
+  width: $pc__w / 2;
 }
 
 .header_buttonInner-first{
@@ -72,14 +72,14 @@ header{
     bottom: 100px;
     left: auto;
   }
-  width: $g__w;
+  width: $pc__w;
   @include clearfix;
 }
 
 .about_column{
   float: left;
-  margin-left: ($g__w - 2 * $about_column__w - $about_column__mr) / 2;
-  margin-right: $about_column__mr - ($g__w - 2 * $about_column__w - $about_column__mr) / 2;
+  margin-left: ($pc__w - 2 * $about_column__w - $about_column__mr) / 2;
+  margin-right: $about_column__mr - ($pc__w - 2 * $about_column__w - $about_column__mr) / 2;
   width: $about_column__w;
 }
 
@@ -103,13 +103,13 @@ header{
 #movie{
   font-weight: bold;
   margin-bottom: 100px;
-  min-width: $g__w;
+  min-width: $pc__w;
   text-align: center;
 }
 
 .movie_youtube{
-  height: $g__w / 16 * 9;
-  width: $g__w;
+  height: $pc__w / 16 * 9;
+  width: $pc__w;
 }
 
 #events{
@@ -119,7 +119,7 @@ header{
 .event{
   margin: 0 auto 50px auto;
   text-align: left;
-  width: $g__w;
+  width: $pc__w;
   @include clearfix;
 }
 
@@ -140,14 +140,14 @@ header{
 
 .event_intro{
   float: left;
-  width: $g__w - $event_image__w - 50px;
+  width: $pc__w - $event_image__w - 50px;
 }
 
 #info{
   font-size: $info__fontSize;
   margin: 0 auto 50px auto;
   text-align: center;
-  width: $g__w;
+  width: $pc__w;
   @include clearfix;
 }
 
@@ -161,7 +161,7 @@ header{
 }
 
 .info_table-head{
-  width: $g__w - $info_table-main__w * 2;
+  width: $pc__w - $info_table-main__w * 2;
 }
 
 .info_table-kids,
@@ -194,7 +194,7 @@ header{
 
 #snsButton{
   margin: 0 auto 30px auto;
-  width: $g__w;
+  width: $pc__w;
   @include clearfix;
 }
 
@@ -217,7 +217,7 @@ header{
 
 .contact_inner{
   margin: 0 auto 0 auto;
-  width: $g__w;
+  width: $pc__w;
 }
 
 .contact_title{
@@ -225,7 +225,7 @@ header{
 }
 
 .contact_formTable{
-  width: $g__w;
+  width: $pc__w;
   tr{
     margin-bottom: 10px;
   }
@@ -259,7 +259,7 @@ footer{
 .footer_inner{
   margin: -10px auto;
   padding: 10px;
-  width: $g__w;
+  width: $pc__w;
   position: relative;
 }
 
