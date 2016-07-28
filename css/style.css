@@ -879,8 +879,11 @@ footer {
           user-select: none;
 }
 
-.header_buttonInner:hover {
+.header_buttonInner {
   background-color: #E2E2E2;
+}
+.header_buttonInner:hover {
+  background-color: #cdcdcd;
 }
 
 .info_table-kids {
