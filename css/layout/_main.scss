@@ -142,3 +142,129 @@ header{
   float: left;
   width: $pc__w - $event_image__w - 50px;
 }
+
+#info{
+  font-size: $info__fontSize;
+  margin: 0 auto 50px auto;
+  text-align: center;
+  width: $pc__w;
+  @include clearfix;
+}
+
+.info_table{
+  line-height: 50px;
+  margin-bottom: 70px;
+  text-align: left;
+  tr{
+    border-bottom: 1px solid;
+  }
+}
+
+.info_table-head{
+  width: $pc__w - $info_table-main__w * 2;
+}
+
+.info_table-kids,
+.info_table-future{
+  width: $info_table-main__w;
+}
+
+.info_map{
+  float: left;
+  height: auto;
+  margin-right: 25px;
+  width: 440px;
+}
+
+#access{
+  margin-top: 75px;
+}
+
+.info_accessTable{
+  text-align: left;
+  letter-spacing: 0em;
+}
+.info_accessIcon{
+  margin: 0 10px;
+}
+
+.info_accessTableHead{
+  margin: 0 10px;
+}
+
+#snsButton{
+  margin: 0 auto 30px auto;
+  width: $pc__w;
+  @include clearfix;
+}
+
+.g-snsButton{
+  float: right;
+  height: 30px;
+  margin-right: 30px;
+  width: auto;
+}
+
+#contact{
+  background-color: $contact__bgc;
+  color: $contact__fontColor;
+  font-size: $contact__fontSize;
+  line-height: 40px;
+  padding: 25px;
+  width: 100%;
+}
+
+.contact_inner{
+  margin: 0 auto 0 auto;
+  width: $pc__w;
+}
+
+.contact_title{
+  border-bottom: 1px solid $contact__fontColor;
+}
+
+.contact_formTable{
+  width: $pc__w;
+  tr{
+    margin-bottom: 10px;
+  }
+  td{
+    vertical-align: top;
+  }
+}
+
+.contact_inputForm{
+  margin-bottom: 15px;
+  width: 55%;
+}
+
+.contact_inputForm-long{
+  height: 120px;
+  width: 100%;
+}
+
+.contact_table-head{
+  width: 170px;
+}
+
+footer{
+  background-color: $footer__bgc;
+  color: $footer__fontColor;
+  font-size: $footer__fontSize;
+  line-height: 1em;
+  width: 100%;
+}
+
+.footer_inner{
+  margin: -10px auto;
+  padding: 10px;
+  width: $pc__w;
+  position: relative;
+}
+
+.footer_text-copyright{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+

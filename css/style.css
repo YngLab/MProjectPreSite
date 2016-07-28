@@ -544,7 +544,7 @@ html {
 
 h2 {
   font-size: 24px;
-  margin-bottom: 50px;
+  margin: 0 auto 50px auto;
   text-decoration: underline;
   width: 1080px;
 }
@@ -705,6 +705,140 @@ header {
   width: 630px;
 }
 
+#info {
+  font-size: 14px;
+  margin: 0 auto 50px auto;
+  text-align: center;
+  width: 1080px;
+}
+#info:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.info_table {
+  line-height: 50px;
+  margin-bottom: 70px;
+  text-align: left;
+}
+.info_table tr {
+  border-bottom: 1px solid;
+}
+
+.info_table-head {
+  width: 180px;
+}
+
+.info_table-kids,
+.info_table-future {
+  width: 450px;
+}
+
+.info_map {
+  float: left;
+  height: auto;
+  margin-right: 25px;
+  width: 440px;
+}
+
+#access {
+  margin-top: 75px;
+}
+
+.info_accessTable {
+  text-align: left;
+  letter-spacing: 0em;
+}
+
+.info_accessIcon {
+  margin: 0 10px;
+}
+
+.info_accessTableHead {
+  margin: 0 10px;
+}
+
+#snsButton {
+  margin: 0 auto 30px auto;
+  width: 1080px;
+}
+#snsButton:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.g-snsButton {
+  float: right;
+  height: 30px;
+  margin-right: 30px;
+  width: auto;
+}
+
+#contact {
+  background-color: #959595;
+  color: #fdfdfd;
+  font-size: 14px;
+  line-height: 40px;
+  padding: 25px;
+  width: 100%;
+}
+
+.contact_inner {
+  margin: 0 auto 0 auto;
+  width: 1080px;
+}
+
+.contact_title {
+  border-bottom: 1px solid #fdfdfd;
+}
+
+.contact_formTable {
+  width: 1080px;
+}
+.contact_formTable tr {
+  margin-bottom: 10px;
+}
+.contact_formTable td {
+  vertical-align: top;
+}
+
+.contact_inputForm {
+  margin-bottom: 15px;
+  width: 55%;
+}
+
+.contact_inputForm-long {
+  height: 120px;
+  width: 100%;
+}
+
+.contact_table-head {
+  width: 170px;
+}
+
+footer {
+  background-color: #4D4D4D;
+  color: #fdfdfd;
+  font-size: 12px;
+  line-height: 1em;
+  width: 100%;
+}
+
+.footer_inner {
+  margin: -10px auto;
+  padding: 10px;
+  width: 1080px;
+  position: relative;
+}
+
+.footer_text-copyright {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
 /* module */
 .header_comming {
   background-color: #4D4D4D;
@@ -733,4 +867,29 @@ header {
 
 .header_buttonInner:hover {
   background-color: #E2E2E2;
+}
+
+.info_table-kids {
+  color: #88C23F;
+  font-size: 22px;
+}
+
+.info_table-future {
+  color: #E48E13;
+  font-size: 22px;
+}
+
+.contact_inputForm {
+  background-color: #fdfdfd;
+  border-radius: 3px;
+  box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
+  color: #020202;
+  font-size: 1.3em;
+  padding: 7px;
+}
+
+.contact_button {
+  background-color: #4D4D4D;
+  border-radius: 5px;
+  padding: 15px 25px;
 }

@@ -163,7 +163,7 @@
 
   <table class="info_table">
     <tr>
-      <th></th>
+      <th class="info_table-head"></th>
       <td class="info_table-kids">はこだてキッズプラザ</td>
       <td class="info_table-future">はこだてみらい館</td>
     </tr>
@@ -177,10 +177,12 @@
       <td>
         大人100円, 子供300円（生後6ヶ月以上）<br>
         　※3ヶ月券　大人300円、子供900円<br>
-        　※6ヶ月券　大人500円、子供1,500円
+        　※6ヶ月券　大人500円、子供1,500円<br>
+        　
       </td>
       <td>
         大人600円, 子供300円（生後6ヶ月以上）<br>
+        （20人以上の団体　大人480円，小中高生240円）<br>
         　※3ヶ月券　大人1,800円、子供900円<br>
         　※6ヶ月券　大人3,000円、子供1,500円
       </td>
@@ -197,7 +199,7 @@
     </tr>
   </table>
 
-  <img src="" alt="アクセス地図" class="info_map">
+  <img src="img/access_map.png" alt="アクセス地図" class="info_map">
 
   <div id="access" class="info_access">
     <h4>交通アクセス</h4>
@@ -205,27 +207,43 @@
     <table class="info_accessTable">
       <tr>
         <th>市内</th>
-        <td>
-          <img src="" alt="バス" class="info_accessIcon">バス　：函館駅バスターミナルから<br>徒歩1分
+        <td class="info_accessTableHead">
+          <img src="img/access_bus.png" alt="バス" class="info_accessIcon">バス　：
         </td>
         <td>
-          <img src="" alt="市電" class="info_accessIcon">市電　函館駅前電停から徒歩1分
+          函館駅バスターミナルから<br>徒歩1分
+        </td>
+        <td class="info_accessTableHead">
+          <img src="img/access_train.png" alt="市電" class="info_accessIcon">市電　：
+        </td>
+        <td>
+          函館駅前電停から徒歩1分
         </td>
       </tr>
       <tr>
         <th></th>
         <td>
-          <img src="" alt="JR" class="info_accessIcon">JR　：函館駅から徒歩3分
+          <img src="img/access_jr.png" alt="JR" class="info_accessIcon">ＪＲ　：
         </td>
+        <td>
+          函館駅から徒歩3分
+        </td>
+        <td></td>
         <td></td>
       </tr>
       <tr>
         <th>遠方</th>
         <td>
-          <img src="" alt="飛行機" class="info_accessIcon">飛行機：函館駅空港から来るまで20分
+          <img src="img/access_air.png" alt="飛行機" class="info_accessIcon">飛行機：
         </td>
         <td>
-          <img src="" alt="新幹線" class="info_accessIcon">新幹線：新はこだて北斗駅→<br>函館駅下車→徒歩3分
+          函館駅空港から来るまで20分
+        </td>
+        <td>
+          <img src="img/access_shinkansen.png" alt="新幹線" class="info_accessIcon">新幹線：
+        </td>
+        <td>
+          新はこだて北斗駅→<br>函館駅下車→徒歩3分
         </td>
       </tr>
     </table>
@@ -233,46 +251,50 @@
 </div>
 
 <div id="snsButton">
-  <img src="" alt="公式facebook" class="g-snsButton">
-  <img src="" alt="ツイートする" class="g-snsButton">
+  <a href="#"><img src="img/sns_twitter.png" alt="ツイートする" class="g-snsButton"></a>
+  <a href="#"><img src="img/sns_facebook.png" alt="公式facebook" class="g-snsButton"></a>
 </div>
 
 <div id="contact">
-  <p class="contact_title">お問い合わせ</p>
+  <div class="contact_inner">
+    <p class="contact_title">お問い合わせ</p>
 
-  <form action="" method="post">
-    <table class="contact_formTable">
-      <tr>
-        <td class="contact_table-head">お名前</td>
-        <td class="contact_table-form">
-          <input type="text" name="name">
-        </td>
-      </tr>
-      <tr>
-        <td>メールアドレス</td>
-        <td>
-          <input type="text" name="mail">
-        </td>
-      </tr>
-      <tr>
-        <td>本文</td>
-        <td>
-          <input type="textarea" name="message">
-        </td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>
-          <input type="submit" value="入力内容を確認する" class="contact_button">
-        </td>
-      </tr>
-    </table>
-  </form>
+    <form action="" method="post">
+      <table class="contact_formTable">
+        <tr>
+          <td class="contact_table-head">お名前</td>
+          <td class="contact_table-form">
+            <input type="text" name="name" class="contact_inputForm">
+          </td>
+        </tr>
+        <tr>
+          <td>メールアドレス</td>
+          <td>
+            <input type="text" name="mail" class="contact_inputForm">
+          </td>
+        </tr>
+        <tr>
+          <td>本文</td>
+          <td>
+            <textarea name="message"class="contact_inputForm contact_inputForm-long"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" value="入力内容を確認する" class="contact_button">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
 </div>
 
 <footer>
-  <p class="footer_text">〒040-0063函館市若松町20番1号 キラリス函館</p>
-  <p class="footer_text">TEL : 0138-23-1131（NAアーバンデベロップメント）</p>
-  <p class="footer_text">E-Mail : info@hakodate-miraiproject.jp</p>
-  <p class="footer_text-copyright">©2016 Hakodate Mirai Project</p>
+  <div class="footer_inner">
+    <p class="footer_text">〒040-0063函館市若松町20番1号 キラリス函館</p>
+    <p class="footer_text">TEL : 0138-23-1131（NAアーバンデベロップメント）</p>
+    <p class="footer_text">E-Mail : info@hakodate-miraiproject.jp</p>
+    <p class="footer_text-copyright">©2016 Hakodate Mirai Project</p>
+  </div>
 </footer>

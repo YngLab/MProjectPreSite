@@ -29,6 +29,19 @@ $about_column__mr: 100px;
 
 $event_image__w: 400px;
 
+$info__fontSize: 14px;
+$info-head__fontSize: 22px;
+$info_table-main__w: 450px;
+
+$contact__bgc: #959595;
+$contact__fontColor: #fdfdfd;
+$contact__fontSize: 14px;
+$contact_button__bgc: #4D4D4D;
+
+$footer__bgc: #4D4D4D;
+$footer__fontColor: #fdfdfd;
+$footer__fontSize: 12px;
+
 @mixin clearfix {
   &:after{
     clear: both;
