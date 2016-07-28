@@ -539,6 +539,7 @@ html {
   color: #020202;
   font-family: 'Noto Sans Japanese', sans-serif;
   font-size: 16px;
+  font-weight: 200;
   letter-spacing: .2em;
 }
 
@@ -864,6 +865,10 @@ footer {
 .header_buttons-lets {
   font-size: 26px;
   font-weight: 100;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .header_buttonInner:hover {
@@ -892,5 +897,17 @@ footer {
 .contact_button {
   background-color: #4D4D4D;
   border-radius: 5px;
+  cursor: pointer;
   padding: 15px 25px;
+}
+.contact_button:hover {
+  background-color: #717171;
+}
+
+.contact-spamBlock {
+  display: none;
+}
+.contact-spamBlock:after {
+  content: "@";
+  display: inline;
 }
