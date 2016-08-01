@@ -25,9 +25,9 @@
 }
 
 .header_buttonInner{
-  background-color: $header_buttonInnner__bgc;
+  background-color: $header_button__bgc;
   &:hover{
-    background-color: $header_buttonInnner__bgc / 1.1;
+    background-color: $header_button__bgc / 1.1;
   }
 }
 
