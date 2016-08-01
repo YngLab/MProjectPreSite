@@ -26,6 +26,7 @@ header{
 }
 
 .header_buttons{
+  background-color: $header_button__bgc;
   border-bottom: $header_buttons__bbColor 3px solid ;
   height: $header_buttons__h;
   position: relative;

@@ -581,6 +581,7 @@ header {
 }
 
 .header_buttons {
+  background-color: #E2E2E2;
   border-bottom: #959595 3px solid;
   height: 70px;
   position: relative;
