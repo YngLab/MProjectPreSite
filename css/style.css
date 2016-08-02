@@ -806,6 +806,7 @@ header {
 
 .contact_formTable {
   width: 95%;
+  text-align: left;
 }
 .contact_formTable tr {
   margin-bottom: 10px;
