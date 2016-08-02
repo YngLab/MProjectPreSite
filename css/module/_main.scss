@@ -31,6 +31,18 @@
   }
 }
 
+.header_recruit{
+  font-size: $header_recruit__fontSize;
+  a{
+    color: $header_comming__fontColor;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+      text-decoration-color: $header_comming__fontColor;
+    }
+  }
+}
+
 .info_table-kids{
   color: $g__color-kids;
   font-size: $info-head__fontSize;

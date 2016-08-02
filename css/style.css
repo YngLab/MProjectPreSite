@@ -887,6 +887,19 @@ footer {
   background-color: #cdcdcd;
 }
 
+.header_recruit {
+  font-size: 16px;
+}
+.header_recruit a {
+  color: #fdfdfd;
+  text-decoration: none;
+}
+.header_recruit a:hover {
+  text-decoration: underline;
+  -moz-text-decoration-color: #fdfdfd;
+       text-decoration-color: #fdfdfd;
+}
+
 .info_table-kids {
   color: #88C23F;
   font-size: 22px;
