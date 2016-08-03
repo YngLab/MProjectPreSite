@@ -623,8 +623,15 @@ header {
   margin: 19px 0 0 0;
 }
 
+#comming {
+  height: 100px;
+  font-size: 28px;
+  line-height: 200px;
+  text-align: center;
+}
+
 #about {
-  margin-top: 50px;
+  margin-top: 150px;
   margin-right: auto;
   margin-bottom: 100px;
   margin-left: auto;
@@ -885,6 +892,32 @@ footer {
 }
 .header_buttonInner:hover {
   background-color: #cdcdcd;
+}
+
+.header_recruit,
+.header_news {
+  font-size: 16px;
+}
+.header_recruit a,
+.header_news a {
+  color: #fdfdfd;
+  text-decoration: none;
+}
+.header_recruit a:hover,
+.header_news a:hover {
+  text-decoration: underline;
+  -moz-text-decoration-color: #fdfdfd;
+       text-decoration-color: #fdfdfd;
+}
+.header_recruit a:hover img,
+.header_news a:hover img {
+  opacity: .7;
+}
+
+.header_newsLogo {
+  height: 18px;
+  margin-bottom: 5px;
+  margin-right: 7px;
 }
 
 .info_table-kids {
