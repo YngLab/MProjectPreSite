@@ -645,9 +645,7 @@ header {
 
 .about_column {
   float: left;
-  margin-left: 90px;
-  margin-right: 10px;
-  width: 400px;
+  width: 540px;
 }
 
 .about_logo,
@@ -657,6 +655,7 @@ header {
 }
 
 .about_info {
+  padding: 0 50px;
   margin-bottom: 50px;
 }
 
@@ -664,7 +663,7 @@ header {
   display: block;
   height: auto;
   margin-bottom: 30px;
-  width: 400px;
+  width: 540px;
 }
 
 #movie {
@@ -918,6 +917,14 @@ footer {
   height: 18px;
   margin-bottom: 5px;
   margin-right: 7px;
+}
+
+.about_info-kidsIntro {
+  color: #88C23F;
+}
+
+.about_info-introFuture {
+  color: #E48E13;
 }
 
 .info_table-kids {
