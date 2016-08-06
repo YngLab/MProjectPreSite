@@ -544,9 +544,10 @@ html {
 }
 
 h2 {
+  border-bottom: 1px solid #4D4D4D;
   font-size: 24px;
+  padding-bottom: 15px;
   margin: 0 auto 50px auto;
-  text-decoration: underline;
   width: 1080px;
 }
 
@@ -692,9 +693,8 @@ header {
 
 #movie {
   font-weight: bold;
-  margin-bottom: 100px;
-  min-width: 1080px;
-  text-align: center;
+  margin: 0 auto 100px auto;
+  width: 1080px;
 }
 
 .movie_youtube {
@@ -863,7 +863,7 @@ footer {
   color: #fdfdfd;
   font-size: 12px;
   line-height: 1em;
-  min-width: pc__w;
+  min-width: 1080px;
   width: 100%;
 }
 
