@@ -656,6 +656,7 @@ header {
 }
 
 .about_info {
+  font-size: 19px;
   padding: 0 50px;
   margin-bottom: 50px;
 }
