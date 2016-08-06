@@ -75,7 +75,7 @@ header{
 
 #about{
   margin:{
-    top: 150px;
+    top: 0;
     right: auto;
     bottom: 100px;
     left: auto;
@@ -98,7 +98,7 @@ header{
 .about_info{
   font-size: $about__fontSize;
   padding: 0 50px;
-  margin-bottom: 50px;
+  margin: 50px 0;
 }
 
 .about_intro{
