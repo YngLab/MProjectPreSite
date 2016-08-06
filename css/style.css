@@ -659,11 +659,35 @@ header {
   margin-bottom: 50px;
 }
 
-.about_introImage {
+.about_intro {
   display: block;
-  height: auto;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  position: relative;
   width: 540px;
+  height: 303.75px;
+}
+
+.about_introImage {
+  bottom: 0;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.about_introTitle {
+  bottom: 15px;
+  color: #fdfdfd;
+  left: 20px;
+  margin: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.about_introTitle-black {
+  color: #020202;
 }
 
 #movie {

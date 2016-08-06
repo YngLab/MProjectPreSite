@@ -100,11 +100,35 @@ header{
   margin-bottom: 50px;
 }
 
-.about_introImage{
+.about_intro{
   display: block;
+  margin-bottom: 10px;
+  position: relative;
+  width: $about_intro__w;
+  @include aspect34($about_intro__w)
+}
+
+.about_introImage{
+  bottom: 0;
   height: auto;
-  margin-bottom: 30px;
-  width: $pc__w / 2;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.about_introTitle{
+  bottom: 15px;
+  color: $about_intro__fontColor;
+  left: 20px;
+  margin: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.about_introTitle-black{
+  color: $about_intro-black__fontColor;
 }
 
 #movie{

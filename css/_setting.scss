@@ -30,6 +30,10 @@ $header_button__bgc: #E2E2E2;
 
 $about_column__w: 400px;
 $about_column__mr: 100px;
+$about_intro__w: $pc__w / 2;
+$about_intro__fontColor: #fdfdfd;
+$about_intro-black__fontColor: #020202;
+
 
 $event_image__w: 400px;
 
@@ -52,4 +56,8 @@ $footer__fontSize: 12px;
     content: "";
     display: block;
   }
+}
+
+@mixin aspect34($width){
+  height : $width * 0.5625;
 }
