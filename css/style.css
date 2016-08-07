@@ -552,6 +552,10 @@ h2 {
   width: 1080px;
 }
 
+h4 {
+  margin: 0;
+}
+
 /* layout */
 header {
   min-width: 1080px;
@@ -693,9 +697,15 @@ header {
   color: #020202;
 }
 
+#logoApp,
 #movie {
-  font-weight: bold;
   margin: 0 auto 100px auto;
+  width: 1080px;
+}
+
+.logoApp_link {
+  background-color: #aaa;
+  height: 607.5px;
   width: 1080px;
 }
 

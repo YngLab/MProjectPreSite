@@ -132,9 +132,15 @@ header{
   color: $about_intro-black__fontColor;
 }
 
+#logoApp,
 #movie{
-  font-weight: bold;
   margin: 0 auto 100px auto;
+  width: $pc__w;
+}
+
+.logoApp_link{
+  background-color: #aaa;
+  height: $pc__w / 16 * 9;
   width: $pc__w;
 }
 
