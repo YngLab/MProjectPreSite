@@ -4,7 +4,7 @@ header{
 
 .header_top{
   margin: 0 auto;
-  padding: 30px 30px 0 0;
+  padding: 20px 20px 0 0;
   text-align: right;
   width: $pc__w;
 }
@@ -149,6 +149,28 @@ header{
   float: left;
   margin: 10px 0;
   width: $pc__w - $event_image__w - 50px;
+}
+
+#recruit{
+  letter-spacing: 0.1em;
+  margin: 0 auto 100px auto;
+  width: $pc__w;
+  @include clearfix;
+}
+
+.recruit_2colomn{
+  float: left;
+  margin: -50px 0 0 0;
+  width: $pc__w / 2;
+}
+
+.recruit_title{
+  font-size: $recruit_title__fontSize;
+  font-weight: normal;
+}
+
+.recruit_info{
+  font-size: $recruit_info__fontSize;
 }
 
 #info{
