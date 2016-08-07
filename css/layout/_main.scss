@@ -189,7 +189,6 @@ header{
 
 .info_table{
   line-height: 50px;
-  margin-bottom: 70px;
   text-align: left;
   tr{
     border-bottom: 1px solid;
@@ -205,11 +204,13 @@ header{
   width: $info_table-main__w;
 }
 
+tr.info_tableMap{
+  border-bottom: hidden;
+}
+
 .info_map{
-  float: left;
   height: auto;
-  margin-right: 25px;
-  width: 440px;
+  width: 100%;
 }
 
 #access{
