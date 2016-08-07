@@ -193,6 +193,9 @@ header{
   tr{
     border-bottom: 1px solid;
   }
+  tr.info_tableMap{
+    border-bottom: hidden;
+  }
 }
 
 .info_table-head{
@@ -204,28 +207,30 @@ header{
   width: $info_table-main__w;
 }
 
-tr.info_tableMap{
-  border-bottom: hidden;
-}
-
 .info_map{
   height: auto;
   width: 100%;
 }
 
 #access{
-  margin-top: 75px;
+  margin: 75px auto 50px auto;
+  width: $pc__w;
 }
 
-.info_accessTable{
+.accessTable{
   text-align: left;
   letter-spacing: 0em;
-}
-.info_accessIcon{
-  margin: 0 10px;
+  line-height: 50px;
+  width: 100%;
+  tr.accessTable-far{
+    line-height: 100px;
+  }
+  th{
+    padding-right: 30px;
+  }
 }
 
-.info_accessTableHead{
+.accessIcon{
   margin: 0 10px;
 }
 

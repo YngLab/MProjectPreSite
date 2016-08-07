@@ -14,7 +14,8 @@ html{
 h2{
   border-bottom: 1px solid $h2__bbColor;
   font-size: $h2__fontSize;
-  padding-bottom: 15px;
   margin: 0 auto 50px auto;
+  padding-bottom: 15px;
+  text-align: center;
   width: $pc__w;
 }

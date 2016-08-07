@@ -546,8 +546,9 @@ html {
 h2 {
   border-bottom: 1px solid #4D4D4D;
   font-size: 24px;
-  padding-bottom: 15px;
   margin: 0 auto 50px auto;
+  padding-bottom: 15px;
+  text-align: center;
   width: 1080px;
 }
 
@@ -763,6 +764,9 @@ header {
 .info_table tr {
   border-bottom: 1px solid;
 }
+.info_table tr.info_tableMap {
+  border-bottom: hidden;
+}
 
 .info_table-head {
   width: 180px;
@@ -773,29 +777,30 @@ header {
   width: 450px;
 }
 
-tr.info_tableMap {
-  border-bottom: hidden;
-}
-
 .info_map {
   height: auto;
   width: 100%;
 }
 
 #access {
-  margin-top: 75px;
+  margin: 75px auto 50px auto;
+  width: 1080px;
 }
 
-.info_accessTable {
+.accessTable {
   text-align: left;
   letter-spacing: 0em;
+  line-height: 50px;
+  width: 100%;
+}
+.accessTable tr.accessTable-far {
+  line-height: 100px;
+}
+.accessTable th {
+  padding-right: 30px;
 }
 
-.info_accessIcon {
-  margin: 0 10px;
-}
-
-.info_accessTableHead {
+.accessIcon {
   margin: 0 10px;
 }
 
