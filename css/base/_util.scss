@@ -11,6 +11,11 @@ html{
   letter-spacing: .2em;
 }
 
+header{
+  background-color: $header_comming__bgc;
+  color: $header_comming__fontColor;
+}
+
 h2{
   border-bottom: 1px solid $h2__bbColor;
   font-size: $h2__fontSize;
