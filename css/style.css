@@ -556,6 +556,16 @@ h2 {
   text-align: center;
   width: 1080px;
 }
+@media screen and (max-width: 768px) {
+  h2 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 18px;
+  }
+}
 
 h4 {
   margin: 0;
@@ -565,12 +575,27 @@ h4 {
 header {
   min-width: 1080px;
 }
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    min-width: 100%;
+  }
+}
 
 .header_top {
   margin: 0 auto;
   padding: 20px 20px 0 0;
   text-align: right;
   width: 1080px;
+}
+@media screen and (max-width: 768px) {
+  .header_top {
+    width: 100%;
+  }
 }
 
 .header_comming {
@@ -593,6 +618,11 @@ header {
 .header_logoImage {
   width: 540px;
 }
+@media screen and (max-width: 768px) {
+  .header_logoImage {
+    width: 100%;
+  }
+}
 
 .header_logo-kids {
   text-align: right;
@@ -612,6 +642,11 @@ header {
   margin-left: auto;
   width: 1080px;
 }
+@media screen and (max-width: 768px) {
+  #about {
+    width: 100%;
+  }
+}
 #about:after {
   clear: both;
   content: "";
@@ -621,6 +656,11 @@ header {
 .about_column {
   float: left;
   width: 540px;
+}
+@media screen and (max-width: 768px) {
+  .about_column {
+    width: 100%;
+  }
 }
 
 .about_logo,
@@ -667,16 +707,42 @@ header {
   margin: 0 auto 100px auto;
   width: 1080px;
 }
+@media screen and (max-width: 768px) {
+  #logoApp,
+  #movie {
+    width: 100%;
+  }
+}
 
 .logoApp_link {
   background-color: #aaa;
   height: 607.5px;
   width: 1080px;
 }
+@media screen and (max-width: 768px) {
+  .logoApp_link {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .logoApp_link {
+    height: calc(100% / 16 * 9);
+  }
+}
 
 .movie_youtube {
   height: 607.5px;
   width: 1080px;
+}
+@media screen and (max-width: 768px) {
+  .movie_youtube {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .movie_youtube {
+    height: calc(100% / 16 * 9);
+  }
 }
 
 #events {
@@ -693,6 +759,11 @@ header {
   content: "";
   display: block;
 }
+@media screen and (max-width: 768px) {
+  .event {
+    width: 100%;
+  }
+}
 
 .event_title {
   margin: 0 0 5px 0;
@@ -703,6 +774,11 @@ header {
   height: auto;
   margin-right: 50px;
   width: 400px;
+}
+@media screen and (max-width: 768px) {
+  .event_image {
+    width: 100%;
+  }
 }
 
 .event_detail {
@@ -719,6 +795,11 @@ header {
   margin: 10px 0;
   width: 630px;
 }
+@media screen and (max-width: 768px) {
+  .event_intro {
+    width: 100%;
+  }
+}
 
 #recruit {
   letter-spacing: 0.1em;
@@ -730,11 +811,21 @@ header {
   content: "";
   display: block;
 }
+@media screen and (max-width: 768px) {
+  #recruit {
+    width: 100%;
+  }
+}
 
 .recruit_2colomn {
   float: left;
   margin: -50px 0 0 0;
   width: 540px;
+}
+@media screen and (max-width: 768px) {
+  .recruit_2colomn {
+    width: 100%;
+  }
 }
 
 .recruit_title {
@@ -756,6 +847,11 @@ header {
   clear: both;
   content: "";
   display: block;
+}
+@media screen and (max-width: 768px) {
+  #info {
+    width: 100%;
+  }
 }
 
 .info_table {
@@ -787,6 +883,11 @@ header {
   margin: 0 auto 100px auto;
   width: 1080px;
 }
+@media screen and (max-width: 768px) {
+  #access {
+    width: 100%;
+  }
+}
 
 .accessTable {
   text-align: left;
@@ -815,6 +916,11 @@ header {
   content: "";
   display: block;
 }
+@media screen and (max-width: 768px) {
+  #snsButton {
+    width: 100%;
+  }
+}
 
 .g-snsButton {
   float: right;
@@ -833,10 +939,25 @@ header {
   padding-bottom: 50px;
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  #contact {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #contact {
+    min-width: 100%;
+  }
+}
 
 .contact_inner {
   margin: 5px auto;
   max-width: 1080px;
+}
+@media screen and (max-width: 768px) {
+  .contact_inner {
+    width: 100%;
+  }
 }
 
 .contact_title {
@@ -875,12 +996,27 @@ footer {
   min-width: 1080px;
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  footer {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer {
+    min-width: 100%;
+  }
+}
 
 .footer_inner {
   margin: -10px auto;
   padding: 10px;
   width: 1080px;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .footer_inner {
+    width: 100%;
+  }
 }
 
 .footer_snsButton {

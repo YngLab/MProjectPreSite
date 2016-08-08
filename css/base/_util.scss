@@ -23,6 +23,10 @@ h2{
   padding-bottom: 15px;
   text-align: center;
   width: $pc__w;
+  @include smallW;
+  @media #{$small} {
+    font-size: $h2__fontSize * .75;
+  }
 }
 
 h4{

@@ -1,5 +1,9 @@
 header{
   min-width: $pc__w;
+  @include smallW;
+  @media #{$small} {
+    min-width: 100%;
+  }
 }
 
 .header_top{
@@ -7,6 +11,7 @@ header{
   padding: 20px 20px 0 0;
   text-align: right;
   width: $pc__w;
+  @include smallW;
 }
 
 .header_comming{
@@ -26,6 +31,7 @@ header{
 
 .header_logoImage{
   width: $pc__w / 2;
+  @include smallW;
 }
 
 .header_logo-kids{
@@ -47,12 +53,14 @@ header{
     left: auto;
   }
   width: $pc__w;
+  @include smallW;
   @include clearfix;
 }
 
 .about_column{
   float: left;
   width: $pc__w / 2;
+  @include smallW;
 }
 
 .about_logo,
@@ -98,17 +106,26 @@ header{
 #movie{
   margin: 0 auto 100px auto;
   width: $pc__w;
+  @include smallW;
 }
 
 .logoApp_link{
   background-color: #aaa;
   height: $pc__w / 16 * 9;
   width: $pc__w;
+  @include smallW;
+  @media #{$small} {
+    height: calc(100% / 16 * 9);
+  }
 }
 
 .movie_youtube{
   height: $pc__w / 16 * 9;
   width: $pc__w;
+  @include smallW;
+  @media #{$small} {
+    height: calc(100% / 16 * 9);
+  }
 }
 
 #events{
@@ -120,6 +137,7 @@ header{
   text-align: left;
   width: $pc__w;
   @include clearfix;
+  @include smallW;
 }
 .event_title{
   margin: 0 0 5px 0;
@@ -130,6 +148,7 @@ header{
   height: auto;
   margin-right: 50px;
   width: $event_image__w;
+  @include smallW;
 }
 
 .event_detail{
@@ -145,6 +164,7 @@ header{
   float: left;
   margin: 10px 0;
   width: $pc__w - $event_image__w - 50px;
+  @include smallW;
 }
 
 #recruit{
@@ -152,12 +172,14 @@ header{
   margin: 0 auto 100px auto;
   width: $pc__w;
   @include clearfix;
+  @include smallW;
 }
 
 .recruit_2colomn{
   float: left;
   margin: -50px 0 0 0;
   width: $pc__w / 2;
+  @include smallW;
 }
 
 .recruit_title{
@@ -175,6 +197,7 @@ header{
   text-align: center;
   width: $pc__w;
   @include clearfix;
+  @include smallW;
 }
 
 .info_table{
@@ -205,6 +228,7 @@ header{
 #access{
   margin: 0 auto 100px auto;
   width: $pc__w;
+  @include smallW;
 }
 
 .accessTable{
@@ -229,6 +253,7 @@ header{
   margin: 0 auto 30px auto;
   width: $pc__w;
   @include clearfix;
+  @include smallW;
 }
 
 .g-snsButton{
@@ -247,11 +272,16 @@ header{
   padding: 25px;
   padding-bottom: 50px;
   width: 100%;
+  @include smallW;
+  @media #{$small} {
+    min-width: 100%;
+  }
 }
 
 .contact_inner{
   margin: 5px auto;
   max-width: $pc__w;
+  @include smallW;
 }
 
 .contact_title{
@@ -289,6 +319,10 @@ footer{
   line-height: 1em;
   min-width: $pc__w;
   width: 100%;
+  @include smallW;
+  @media #{$small} {
+    min-width: 100%;
+  }
 }
 
 .footer_inner{
@@ -296,6 +330,7 @@ footer{
   padding: 10px;
   width: $pc__w;
   position: relative;
+  @include smallW;
 }
 
 .footer_snsButton{
