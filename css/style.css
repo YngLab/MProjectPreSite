@@ -670,8 +670,25 @@ header {
 
 .logoApp_link {
   background-color: #aaa;
-  height: 607.5px;
   width: 1080px;
+}
+.logoApp_link:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.logoApp_exampleTable {
+  float: left;
+  height: 540px;
+  width: 540px;
+}
+.logoApp_exampleTable td {
+  width: 25%;
+}
+
+.logoApp_exampleImage {
+  width: 100%;
 }
 
 .movie_youtube {

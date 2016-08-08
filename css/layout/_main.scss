@@ -102,8 +102,22 @@ header{
 
 .logoApp_link{
   background-color: #aaa;
-  height: $pc__w / 16 * 9;
+  //height: $pc__w / 16 * 9;
   width: $pc__w;
+  @include clearfix;
+}
+
+.logoApp_exampleTable{
+  float: left;
+  height: $pc__w / 2;
+  width: $pc__w / 2;
+  td{
+    width: 25%;
+  }
+}
+
+.logoApp_exampleImage{
+  width: 100%;
 }
 
 .movie_youtube{
