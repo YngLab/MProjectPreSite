@@ -766,20 +766,54 @@ header {
   }
 }
 
-.logoApp_link {
-  background-color: #aaa;
-  height: 607.5px;
+.logoApp_example {
   width: 1080px;
 }
 @media screen and (max-width: 768px) {
-  .logoApp_link {
+  .logoApp_example {
     width: 100%;
   }
 }
-@media screen and (max-width: 768px) {
-  .logoApp_link {
-    height: 56.25vw;
-  }
+.logoApp_example:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.logoApp_exampleTable {
+  float: left;
+  height: 540px;
+  margin-bottom: 20px;
+  width: 540px;
+}
+.logoApp_exampleTable td {
+  width: 25%;
+}
+
+.logoApp_exampleImage {
+  width: 100%;
+}
+
+.logoApp_link {
+  display: block;
+  margin: auto;
+  text-decoration: none;
+  width: 200px;
+}
+
+.logoApp_linkButton {
+  border: 2px solid #020202;
+  border-radius: 5px;
+  color: #020202;
+  margin: auto;
+  padding: 15px;
+  text-align: center;
+  -webkit-transition: .1s;
+          transition: .1s;
+}
+.logoApp_linkButton:hover {
+  background-color: #020202;
+  color: #fdfdfd;
 }
 
 .movie_youtube {
