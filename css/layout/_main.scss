@@ -100,10 +100,44 @@ header{
   width: $pc__w;
 }
 
-.logoApp_link{
-  background-color: #aaa;
-  height: $pc__w / 16 * 9;
+.logoApp_example{
   width: $pc__w;
+  @include clearfix;
+}
+
+.logoApp_exampleTable{
+  float: left;
+  height: $pc__w / 2;
+  margin-bottom: 20px;
+  width: $pc__w / 2;
+  td{
+    width: 25%;
+  }
+}
+
+.logoApp_exampleImage{
+  width: 100%;
+}
+
+.logoApp_link{
+  display: block;
+  margin: auto;
+  text-decoration: none;
+  width: 200px;
+}
+
+.logoApp_linkButton{
+  border: 2px solid $g__fontColor;
+  border-radius: 5px;
+  color: $g__fontColor;
+  margin: auto;
+  padding: 15px;
+  text-align: center;
+  transition: .1s;
+  &:hover{
+    background-color: $g__fontColor;
+    color: $g__bgc;
+  }
 }
 
 .movie_youtube{
