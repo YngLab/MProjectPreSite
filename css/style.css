@@ -880,6 +880,7 @@ header {
 @media screen and (max-width: 768px) {
   .event_intro {
     padding: 0 20px;
+    margin: 20px 0;
   }
 }
 
@@ -955,6 +956,21 @@ header {
 .info_table tr.info_tableMap {
   border-bottom: hidden;
 }
+@media screen and (max-width: 768px) {
+  .info_table {
+    font-size: 3.5vw;
+    letter-spacing: .1em;
+    line-height: 2.5em;
+    margin: 0 10px 50px 10px;
+  }
+  .info_table th {
+    padding: 0 2%;
+    width: 23%;
+  }
+  .info_table td {
+    padding-right: 2%;
+  }
+}
 
 .info_table-head {
   width: 180px;
@@ -963,6 +979,19 @@ header {
 .info_table-kids,
 .info_table-future {
   width: 450px;
+}
+@media screen and (max-width: 768px) {
+  .info_table-kids,
+  .info_table-future {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .info_table-kids,
+  .info_table-future {
+    margin-bottom: 10px;
+    text-align: center;
+  }
 }
 
 .info_map {

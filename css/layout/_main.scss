@@ -210,6 +210,7 @@ header{
   @include smallW;
   @media #{$small} {
     padding: 0 20px;
+    margin: 20px 0;
   }
 }
 
@@ -262,6 +263,19 @@ header{
   tr.info_tableMap{
     border-bottom: hidden;
   }
+  @media #{$small} {
+    font-size: 3.5vw;
+    letter-spacing: .1em;
+    line-height: 2.5em;
+    margin: 0 10px 50px 10px;
+    th{
+      padding: 0 2%;
+      width: 23%;
+    }
+    td{
+      padding-right: 2%;
+    }
+  }
 }
 
 .info_table-head{
@@ -271,6 +285,11 @@ header{
 .info_table-kids,
 .info_table-future{
   width: $info_table-main__w;
+  @include smallW;
+  @media #{$small} {
+    margin-bottom: 10px;
+    text-align: center;
+  }
 }
 
 .info_map{
