@@ -136,7 +136,6 @@ header{
 
 .logoApp_example{
   width: $pc__w;
-  @include smallW;
   @include clearfix;
 }
 

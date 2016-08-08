@@ -769,11 +769,6 @@ header {
 .logoApp_example {
   width: 1080px;
 }
-@media screen and (max-width: 768px) {
-  .logoApp_example {
-    width: 100%;
-  }
-}
 .logoApp_example:after {
   clear: both;
   content: "";
