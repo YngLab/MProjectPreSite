@@ -684,7 +684,7 @@ header {
 }
 
 .event {
-  margin: 0 auto 70px auto;
+  margin: 0 auto 100px auto;
   text-align: left;
   width: 1080px;
 }
@@ -748,7 +748,7 @@ header {
 
 #info {
   font-size: 14px;
-  margin: 0 auto 50px auto;
+  margin: 0 auto 100px auto;
   text-align: center;
   width: 1080px;
 }
@@ -784,7 +784,7 @@ header {
 }
 
 #access {
-  margin: 75px auto 50px auto;
+  margin: 0 auto 100px auto;
   width: 1080px;
 }
 
