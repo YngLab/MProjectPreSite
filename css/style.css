@@ -769,6 +769,11 @@ header {
 .logoApp_example {
   width: 1080px;
 }
+@media screen and (max-width: 768px) {
+  .logoApp_example {
+    width: 100%;
+  }
+}
 .logoApp_example:after {
   clear: both;
   content: "";
@@ -780,6 +785,17 @@ header {
   height: 540px;
   margin-bottom: 20px;
   width: 540px;
+}
+@media screen and (max-width: 768px) {
+  .logoApp_exampleTable {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .logoApp_exampleTable {
+    height: auto;
+    margin-bottom: 0;
+  }
 }
 .logoApp_exampleTable td {
   width: 25%;
@@ -794,6 +810,11 @@ header {
   margin: auto;
   text-decoration: none;
   width: 200px;
+}
+@media screen and (max-width: 768px) {
+  .logoApp_link {
+    margin-top: 20px;
+  }
 }
 
 .logoApp_linkButton {

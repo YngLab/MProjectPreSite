@@ -136,6 +136,7 @@ header{
 
 .logoApp_example{
   width: $pc__w;
+  @include smallW;
   @include clearfix;
 }
 
@@ -144,6 +145,11 @@ header{
   height: $pc__w / 2;
   margin-bottom: 20px;
   width: $pc__w / 2;
+  @include smallW;
+  @media #{$small} {
+    height: auto;
+    margin-bottom: 0;
+  }
   td{
     width: 25%;
   }
@@ -158,6 +164,9 @@ header{
   margin: auto;
   text-decoration: none;
   width: 200px;
+  @media #{$small} {
+    margin-top: 20px;
+  }
 }
 
 .logoApp_linkButton{
