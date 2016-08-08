@@ -1054,6 +1054,11 @@ header {
     width: 100%;
   }
 }
+@media screen and (max-width: 768px) {
+  #access {
+    font-size: 14px;
+  }
+}
 
 .accessTable {
   text-align: left;
@@ -1072,6 +1077,7 @@ header {
 @media screen and (max-width: 768px) {
   .accessTable th {
     padding-left: 10px;
+    padding-right: 0;
   }
 }
 

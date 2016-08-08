@@ -338,6 +338,9 @@ header{
   margin: 0 auto 100px auto;
   width: $pc__w;
   @include smallW;
+  @media #{$small} {
+    font-size: 14px;//ignore cording rule
+  }
 }
 
 .accessTable{
@@ -354,6 +357,7 @@ header{
     padding-right: 30px;
     @media #{$small} {
       padding-left: 10px;
+      padding-right: 0;
     }
   }
 }
