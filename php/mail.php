@@ -59,7 +59,6 @@ setTimeout(function(){
 </script>
 END;
 
-
 }
 echo $contents;
 session_destroy();
