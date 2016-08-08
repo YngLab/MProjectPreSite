@@ -1093,6 +1093,11 @@ footer {
     width: 100%;
   }
 }
+@media screen and (max-width: 768px) {
+  .footer_inner {
+    position: static;
+  }
+}
 
 .footer_snsButton {
   height: 30px;
@@ -1100,11 +1105,29 @@ footer {
   bottom: 20px;
   right: 280px;
 }
+@media screen and (max-width: 768px) {
+  .footer_snsButton {
+    display: block;
+    height: auto;
+    margin: 2em auto;
+    width: 60%;
+    position: static;
+    bottom: 0;
+    right: 0;
+  }
+}
 
 .footer_text-copyright {
   position: absolute;
   bottom: 10px;
   right: 10px;
+}
+@media screen and (max-width: 768px) {
+  .footer_text-copyright {
+    position: static;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 /* module */

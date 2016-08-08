@@ -376,6 +376,9 @@ footer{
   width: $pc__w;
   position: relative;
   @include smallW;
+  @media #{$small} {
+    position: static;
+  }
 }
 
 .footer_snsButton{
@@ -383,11 +386,26 @@ footer{
   position: absolute;
   bottom: 20px;
   right: 280px;
+  @media #{$small} {
+    display: block;
+    height: auto;
+    margin: 2em auto;
+    width: 60%;
+
+    position: static;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 .footer_text-copyright{
   position: absolute;
   bottom: 10px;
   right: 10px;
+  @media #{$small} {
+    position: static;
+    bottom: 0;
+    right: 0;
+  }
 }
 
