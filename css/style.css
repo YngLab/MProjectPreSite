@@ -620,10 +620,18 @@ header {
   }
 }
 
-.header_logos:after {
+#logos {
+  min-width: 1080px;
+}
+#logos:after {
   clear: both;
   content: "";
   display: block;
+}
+@media screen and (max-width: 768px) {
+  #logos {
+    min-width: 100%;
+  }
 }
 
 .header_logo {

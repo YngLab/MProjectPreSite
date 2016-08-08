@@ -28,8 +28,12 @@ header{
   }
 }
 
-.header_logos{
+#logos{
   @include clearfix;
+  min-width: $pc__w;
+  @media #{$small} {
+    min-width: 100%;
+  }
 }
 
 .header_logo{
