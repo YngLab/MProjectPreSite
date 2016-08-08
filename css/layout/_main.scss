@@ -364,14 +364,15 @@ header{
 
 .contact_formTable{
   width: 95%;
+  @include smallW;
   tr{
     margin-bottom: 10px;
   }
   td{
     vertical-align: top;
+    @include smallW;
     @media #{$small} {
       display: block;
-      width: 100%;
     }
   }
 }
@@ -379,14 +380,13 @@ header{
 .contact_inputForm{
   margin-bottom: 15px;
   width: 55%;
-  @media #{$small} {
-    width: 98%;
-  }
+  @include smallW;
 }
 
 .contact_inputForm-long{
   height: 120px;
   width: 98%;
+  @include smallW;
 }
 
 .contact_table-head{

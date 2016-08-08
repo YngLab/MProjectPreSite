@@ -1089,6 +1089,11 @@ header {
 .contact_formTable {
   width: 95%;
 }
+@media screen and (max-width: 768px) {
+  .contact_formTable {
+    width: 100%;
+  }
+}
 .contact_formTable tr {
   margin-bottom: 10px;
 }
@@ -1097,8 +1102,12 @@ header {
 }
 @media screen and (max-width: 768px) {
   .contact_formTable td {
-    display: block;
     width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact_formTable td {
+    display: block;
   }
 }
 
@@ -1108,13 +1117,18 @@ header {
 }
 @media screen and (max-width: 768px) {
   .contact_inputForm {
-    width: 98%;
+    width: 100%;
   }
 }
 
 .contact_inputForm-long {
   height: 120px;
   width: 98%;
+}
+@media screen and (max-width: 768px) {
+  .contact_inputForm-long {
+    width: 100%;
+  }
 }
 
 .contact_table-head {
