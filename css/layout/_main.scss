@@ -369,12 +369,19 @@ header{
   }
   td{
     vertical-align: top;
+    @media #{$small} {
+      display: block;
+      width: 100%;
+    }
   }
 }
 
 .contact_inputForm{
   margin-bottom: 15px;
   width: 55%;
+  @media #{$small} {
+    width: 98%;
+  }
 }
 
 .contact_inputForm-long{

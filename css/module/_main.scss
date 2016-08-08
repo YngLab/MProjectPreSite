@@ -113,7 +113,11 @@
   padding: 15px 25px;
   &:hover{
     background-color: ($contact_button__bgc + $contact__bgc) / 2;
-
+  }
+  @media #{$small} {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
   }
 }
 

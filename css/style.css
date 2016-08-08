@@ -1095,10 +1095,21 @@ header {
 .contact_formTable td {
   vertical-align: top;
 }
+@media screen and (max-width: 768px) {
+  .contact_formTable td {
+    display: block;
+    width: 100%;
+  }
+}
 
 .contact_inputForm {
   margin-bottom: 15px;
   width: 55%;
+}
+@media screen and (max-width: 768px) {
+  .contact_inputForm {
+    width: 98%;
+  }
 }
 
 .contact_inputForm-long {
@@ -1305,6 +1316,13 @@ footer {
 }
 .contact_button:hover {
   background-color: #717171;
+}
+@media screen and (max-width: 768px) {
+  .contact_button {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+  }
 }
 
 .contact-spamBlock {
