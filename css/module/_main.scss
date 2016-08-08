@@ -1,11 +1,28 @@
+.g-pcOnly{
+  @media #{$small} {
+    display: none;
+  }
+}
+
+.g-smallOnly{
+  @media #{$normal} {
+    display: none;
+  }
+}
+
 .header_comming{
   font-size: $header_comming__fontSize;
   font-weight: 200;
   text-align: center;
+  @media #{$small} {
+    font-size: 4vw;
+    height: auto;
+    letter-spacing: .1em;
+  }
 }
 
 .header_comming-em{
-  font-size: $header_comming-em__fontSize;
+  font-size: 1.7em;
 }
 
 .header_logo-kids{
@@ -43,6 +60,15 @@
         opacity: .7;
       }
     }
+  }
+  @media #{$small} {
+    display: block;
+    float: left;
+    font-size: 4vw;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 50%;
   }
 }
 
@@ -87,7 +113,11 @@
   padding: 15px 25px;
   &:hover{
     background-color: ($contact_button__bgc + $contact__bgc) / 2;
-
+  }
+  @media #{$small} {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
   }
 }
 
