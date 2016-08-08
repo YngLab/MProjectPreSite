@@ -1,5 +1,5 @@
-$small: "only screen and (max-width: 768px)";
-$normal: "only screen and (min-width: 769px)";
+$small: "screen and (max-width: 768px)";
+$normal: "screen and (min-width: 769px)";
 
 $h2__fontSize: 24px;
 $h2__bbColor: #4D4D4D;
@@ -55,7 +55,7 @@ $footer__bgc: #4D4D4D;
 $footer__fontColor: #fdfdfd;
 $footer__fontSize: 12px;
 
-@mixin clearfix {
+@mixin clearfix{
   &:after{
     clear: both;
     content: "";
@@ -65,4 +65,10 @@ $footer__fontSize: 12px;
 
 @mixin aspect34($width){
   height : $width * 0.5625;
+}
+
+@mixin smallW{
+  @media #{$small} {
+    width: 100%;
+  }
 }
