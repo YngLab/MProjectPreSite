@@ -844,12 +844,6 @@ header {
   }
 }
 
-.event_info:after {
-  clear: both;
-  content: "";
-  display: block;
-}
-
 .event_detail {
   float: left;
   margin: 10px 0;
@@ -958,10 +952,11 @@ header {
 }
 @media screen and (max-width: 768px) {
   .info_table {
-    font-size: 3.5vw;
+    font-size: 1em;
     letter-spacing: .1em;
     line-height: 2.5em;
     margin: 0 10px 50px 10px;
+    width: calc(100% - 20px);
   }
   .info_table th {
     padding: 0 2%;
@@ -1015,11 +1010,18 @@ header {
   line-height: 50px;
   width: 100%;
 }
-.accessTable tr.accessTable-far {
-  line-height: 100px;
+@media screen and (min-width: 769px) {
+  .accessTable tr.accessTable-far {
+    line-height: 100px;
+  }
 }
 .accessTable th {
   padding-right: 30px;
+}
+@media screen and (max-width: 768px) {
+  .accessTable th {
+    padding-left: 10px;
+  }
 }
 
 .accessIcon {

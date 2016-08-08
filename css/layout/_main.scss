@@ -184,10 +184,6 @@ header{
   }
 }
 
-.event_info{
-  @include clearfix;
-}
-
 .event_detail{
   float: left;
   margin: 10px 0;
@@ -264,10 +260,11 @@ header{
     border-bottom: hidden;
   }
   @media #{$small} {
-    font-size: 3.5vw;
+    font-size: 1em;
     letter-spacing: .1em;
     line-height: 2.5em;
     margin: 0 10px 50px 10px;
+    width: calc(100% - 20px);
     th{
       padding: 0 2%;
       width: 23%;
@@ -308,11 +305,16 @@ header{
   letter-spacing: 0em;
   line-height: 50px;
   width: 100%;
-  tr.accessTable-far{
-    line-height: 100px;
+  @media #{$normal} {
+    tr.accessTable-far{
+      line-height: 100px;
+    }
   }
   th{
     padding-right: 30px;
+    @media #{$small} {
+      padding-left: 10px;
+    }
   }
 }
 
