@@ -710,7 +710,6 @@ header {
 @media screen and (max-width: 768px) {
   .about_intro {
     height: 56.25vw;
-    padding: 0 20px;
   }
 }
 
@@ -744,6 +743,12 @@ header {
     width: 100%;
   }
 }
+@media screen and (max-width: 768px) {
+  #logoApp,
+  #movie {
+    padding: 0 20px;
+  }
+}
 
 .logoApp_link {
   background-color: #aaa;
@@ -757,7 +762,7 @@ header {
 }
 @media screen and (max-width: 768px) {
   .logoApp_link {
-    height: calc(100% / 16 * 9);
+    height: 56.25vw;
   }
 }
 
@@ -772,7 +777,7 @@ header {
 }
 @media screen and (max-width: 768px) {
   .movie_youtube {
-    height: calc(100% / 16 * 9);
+    height: 56.25vw;
   }
 }
 
@@ -799,6 +804,12 @@ header {
 .event_title {
   margin: 0 0 5px 0;
 }
+@media screen and (max-width: 768px) {
+  .event_title {
+    margin-bottom: 20px;
+    padding: 0 20px;
+  }
+}
 
 .event_image {
   float: left;
@@ -811,10 +822,29 @@ header {
     width: 100%;
   }
 }
+@media screen and (max-width: 768px) {
+  .event_image {
+    margin-bottom: 20px;
+  }
+}
+
+.event_info:after {
+  clear: both;
+  content: "";
+  display: block;
+}
 
 .event_detail {
   float: left;
   margin: 10px 0;
+}
+@media screen and (max-width: 768px) {
+  .event_detail {
+    float: none;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0 20px;
+  }
 }
 
 .event_info-left {
@@ -829,6 +859,11 @@ header {
 @media screen and (max-width: 768px) {
   .event_intro {
     width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .event_intro {
+    padding: 0 20px;
   }
 }
 
@@ -856,6 +891,15 @@ header {
 @media screen and (max-width: 768px) {
   .recruit_2colomn {
     width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .recruit_2colomn {
+    margin: 10px 0;
+    padding: 0 20px;
+  }
+  .recruit_2colomn br {
+    display: none;
   }
 }
 

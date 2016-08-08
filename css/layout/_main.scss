@@ -94,7 +94,6 @@ header{
   @include smallW;
   @media #{$small} {
     height: 56.25vw; //ignore coding rule
-    padding: 0 20px;
   }
 }
 
@@ -122,6 +121,9 @@ header{
   margin: 0 auto 100px auto;
   width: $pc__w;
   @include smallW;
+  @media #{$small} {
+    padding: 0 20px;
+  }
 }
 
 .logoApp_link{
@@ -130,7 +132,7 @@ header{
   width: $pc__w;
   @include smallW;
   @media #{$small} {
-    height: calc(100% / 16 * 9);
+    height: 56.25vw; //ignore coding rule
   }
 }
 
@@ -139,7 +141,7 @@ header{
   width: $pc__w;
   @include smallW;
   @media #{$small} {
-    height: calc(100% / 16 * 9);
+    height: 56.25vw; //ignore coding rule
   }
 }
 
@@ -154,8 +156,13 @@ header{
   @include clearfix;
   @include smallW;
 }
+
 .event_title{
   margin: 0 0 5px 0;
+  @media #{$small} {
+    margin-bottom: 20px;
+    padding: 0 20px;
+  }
 }
 
 .event_image{
@@ -164,11 +171,24 @@ header{
   margin-right: 50px;
   width: $event_image__w;
   @include smallW;
+  @media #{$small} {
+    margin-bottom: 20px;
+  }
+}
+
+.event_info{
+  @include clearfix;
 }
 
 .event_detail{
   float: left;
   margin: 10px 0;
+  @media #{$small} {
+    float: none;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0 20px;
+  }
 }
 
 .event_info-left{
@@ -180,6 +200,9 @@ header{
   margin: 10px 0;
   width: $pc__w - $event_image__w - 50px;
   @include smallW;
+  @media #{$small} {
+    padding: 0 20px;
+  }
 }
 
 #recruit{
@@ -195,6 +218,13 @@ header{
   margin: -50px 0 0 0;
   width: $pc__w / 2;
   @include smallW;
+  @media #{$small} {
+    margin: 10px 0;
+    padding: 0 20px;
+    br{
+      display: none;
+    }
+  }
 }
 
 .recruit_title{
