@@ -12,12 +12,20 @@ header{
   text-align: right;
   width: $pc__w;
   @include smallW;
+  @media #{$small} {
+    padding: 10px 0;
+    text-align: center;
+    @include clearfix;
+  }
 }
 
 .header_comming{
   height: $header_comming__h;
   margin: 0;
   width: 100%;
+  @media #{$small} {
+    padding-top: 10px;
+  }
 }
 
 .header_logos{
