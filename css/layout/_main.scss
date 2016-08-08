@@ -94,10 +94,6 @@ header{
   z-index: 1;
 }
 
-.about_introTitle-black{
-  color: $about_intro-black__fontColor;
-}
-
 #logoApp,
 #movie{
   margin: 0 auto 100px auto;
@@ -120,7 +116,7 @@ header{
 }
 
 .event{
-  margin: 0 auto 70px auto;
+  margin: 0 auto 100px auto;
   text-align: left;
   width: $pc__w;
   @include clearfix;
@@ -175,7 +171,7 @@ header{
 
 #info{
   font-size: $info__fontSize;
-  margin: 0 auto 50px auto;
+  margin: 0 auto 100px auto;
   text-align: center;
   width: $pc__w;
   @include clearfix;
@@ -207,7 +203,7 @@ header{
 }
 
 #access{
-  margin: 75px auto 50px auto;
+  margin: 0 auto 100px auto;
   width: $pc__w;
 }
 
@@ -225,6 +221,7 @@ header{
 }
 
 .accessIcon{
+  height: 30px;
   margin: 0 10px;
 }
 
@@ -302,6 +299,7 @@ footer{
 }
 
 .footer_snsButton{
+  height: 30px;
   position: absolute;
   bottom: 20px;
   right: 280px;
