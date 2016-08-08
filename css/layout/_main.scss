@@ -1,5 +1,9 @@
 header{
   min-width: $pc__w;
+  @include smallW;
+  @media #{$small} {
+    min-width: 100%;
+  }
 }
 
 .header_top{
@@ -7,12 +11,21 @@ header{
   padding: 20px 20px 0 0;
   text-align: right;
   width: $pc__w;
+  @include smallW;
+  @media #{$small} {
+    padding: 10px 0;
+    text-align: center;
+    @include clearfix;
+  }
 }
 
 .header_comming{
   height: $header_comming__h;
   margin: 0;
   width: 100%;
+  @media #{$small} {
+    padding-top: 10px;
+  }
 }
 
 .header_logos{
@@ -22,10 +35,15 @@ header{
 .header_logo{
   float: left;
   width: 50%;
+  @include smallW;
+  @media #{$small} {
+    float: none;
+  }
 }
 
 .header_logoImage{
   width: $pc__w / 2;
+  @include smallW;
 }
 
 .header_logo-kids{
@@ -47,12 +65,17 @@ header{
     left: auto;
   }
   width: $pc__w;
+  @include smallW;
   @include clearfix;
 }
 
 .about_column{
   float: left;
   width: $pc__w / 2;
+  @include smallW;
+  @media #{$small} {
+    float: none;
+  }
 }
 
 .about_logo,
@@ -65,6 +88,9 @@ header{
   font-size: $about__fontSize;
   padding: 0 50px;
   margin: 50px 0;
+  @media #{$small} {
+    padding: 0 20px;
+  }
 }
 
 .about_intro{
@@ -72,7 +98,11 @@ header{
   margin-bottom: 10px;
   position: relative;
   width: $about_intro__w;
-  @include aspect34($about_intro__w)
+  @include aspect34($about_intro__w);
+  @include smallW;
+  @media #{$small} {
+    height: 56.25vw; //ignore coding rule
+  }
 }
 
 .about_introImage{
@@ -98,10 +128,15 @@ header{
 #movie{
   margin: 0 auto 100px auto;
   width: $pc__w;
+  @include smallW;
+  @media #{$small} {
+    padding: 0 20px;
+  }
 }
 
 .logoApp_example{
   width: $pc__w;
+  @include smallW;
   @include clearfix;
 }
 
@@ -110,6 +145,11 @@ header{
   height: $pc__w / 2;
   margin-bottom: 20px;
   width: $pc__w / 2;
+  @include smallW;
+  @media #{$small} {
+    height: auto;
+    margin-bottom: 0;
+  }
   td{
     width: 25%;
   }
@@ -124,6 +164,9 @@ header{
   margin: auto;
   text-decoration: none;
   width: 200px;
+  @media #{$small} {
+    margin-top: 20px;
+  }
 }
 
 .logoApp_linkButton{
@@ -143,6 +186,10 @@ header{
 .movie_youtube{
   height: $pc__w / 16 * 9;
   width: $pc__w;
+  @include smallW;
+  @media #{$small} {
+    height: 56.25vw; //ignore coding rule
+  }
 }
 
 #events{
@@ -154,9 +201,15 @@ header{
   text-align: left;
   width: $pc__w;
   @include clearfix;
+  @include smallW;
 }
+
 .event_title{
   margin: 0 0 5px 0;
+  @media #{$small} {
+    margin-bottom: 20px;
+    padding: 0 20px;
+  }
 }
 
 .event_image{
@@ -164,11 +217,21 @@ header{
   height: auto;
   margin-right: 50px;
   width: $event_image__w;
+  @include smallW;
+  @media #{$small} {
+    margin-bottom: 20px;
+  }
 }
 
 .event_detail{
   float: left;
   margin: 10px 0;
+  @media #{$small} {
+    float: none;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0 20px;
+  }
 }
 
 .event_info-left{
@@ -179,6 +242,11 @@ header{
   float: left;
   margin: 10px 0;
   width: $pc__w - $event_image__w - 50px;
+  @include smallW;
+  @media #{$small} {
+    padding: 0 20px;
+    margin: 20px 0;
+  }
 }
 
 #recruit{
@@ -186,12 +254,21 @@ header{
   margin: 0 auto 100px auto;
   width: $pc__w;
   @include clearfix;
+  @include smallW;
 }
 
 .recruit_2colomn{
   float: left;
   margin: -50px 0 0 0;
   width: $pc__w / 2;
+  @include smallW;
+  @media #{$small} {
+    margin: 10px 0;
+    padding: 0 20px;
+    br{
+      display: none;
+    }
+  }
 }
 
 .recruit_title{
@@ -209,6 +286,7 @@ header{
   text-align: center;
   width: $pc__w;
   @include clearfix;
+  @include smallW;
 }
 
 .info_table{
@@ -220,6 +298,20 @@ header{
   tr.info_tableMap{
     border-bottom: hidden;
   }
+  @media #{$small} {
+    font-size: 1em;
+    letter-spacing: .1em;
+    line-height: 2.5em;
+    margin: 0 10px 50px 10px;
+    width: calc(100% - 20px);
+    th{
+      padding: 0 2%;
+      width: 23%;
+    }
+    td{
+      padding-right: 2%;
+    }
+  }
 }
 
 .info_table-head{
@@ -229,6 +321,11 @@ header{
 .info_table-kids,
 .info_table-future{
   width: $info_table-main__w;
+  @include smallW;
+  @media #{$small} {
+    margin-bottom: 10px;
+    text-align: center;
+  }
 }
 
 .info_map{
@@ -239,6 +336,7 @@ header{
 #access{
   margin: 0 auto 100px auto;
   width: $pc__w;
+  @include smallW;
 }
 
 .accessTable{
@@ -246,11 +344,16 @@ header{
   letter-spacing: 0em;
   line-height: 50px;
   width: 100%;
-  tr.accessTable-far{
-    line-height: 100px;
+  @media #{$normal} {
+    tr.accessTable-far{
+      line-height: 100px;
+    }
   }
   th{
     padding-right: 30px;
+    @media #{$small} {
+      padding-left: 10px;
+    }
   }
 }
 
@@ -263,6 +366,7 @@ header{
   margin: 0 auto 30px auto;
   width: $pc__w;
   @include clearfix;
+  @include smallW;
 }
 
 .g-snsButton{
@@ -281,11 +385,16 @@ header{
   padding: 25px;
   padding-bottom: 50px;
   width: 100%;
+  @include smallW;
+  @media #{$small} {
+    min-width: 100%;
+  }
 }
 
 .contact_inner{
   margin: 5px auto;
   max-width: $pc__w;
+  @include smallW;
 }
 
 .contact_title{
@@ -294,22 +403,29 @@ header{
 
 .contact_formTable{
   width: 95%;
+  @include smallW;
   tr{
     margin-bottom: 10px;
   }
   td{
     vertical-align: top;
+    @include smallW;
+    @media #{$small} {
+      display: block;
+    }
   }
 }
 
 .contact_inputForm{
   margin-bottom: 15px;
   width: 55%;
+  @include smallW;
 }
 
 .contact_inputForm-long{
   height: 120px;
   width: 98%;
+  @include smallW;
 }
 
 .contact_table-head{
@@ -323,6 +439,10 @@ footer{
   line-height: 1em;
   min-width: $pc__w;
   width: 100%;
+  @include smallW;
+  @media #{$small} {
+    min-width: 100%;
+  }
 }
 
 .footer_inner{
@@ -330,6 +450,10 @@ footer{
   padding: 10px;
   width: $pc__w;
   position: relative;
+  @include smallW;
+  @media #{$small} {
+    position: static;
+  }
 }
 
 .footer_snsButton{
@@ -337,11 +461,26 @@ footer{
   position: absolute;
   bottom: 20px;
   right: 280px;
+  @media #{$small} {
+    display: block;
+    height: auto;
+    margin: 2em auto;
+    width: 60%;
+
+    position: static;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 .footer_text-copyright{
   position: absolute;
   bottom: 10px;
   right: 10px;
+  @media #{$small} {
+    position: static;
+    bottom: 0;
+    right: 0;
+  }
 }
 
