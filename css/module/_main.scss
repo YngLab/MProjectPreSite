@@ -1,3 +1,15 @@
+.g-pcOnly{
+  @media #{$small} {
+    display: none;
+  }
+}
+
+.g-smallOnly{
+  @media #{$normal} {
+    display: none;
+  }
+}
+
 .header_comming{
   font-size: $header_comming__fontSize;
   font-weight: 200;

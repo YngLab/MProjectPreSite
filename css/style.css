@@ -616,8 +616,12 @@ header {
 }
 @media screen and (max-width: 768px) {
   .header_logo {
-    float: none;
     width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header_logo {
+    float: none;
   }
 }
 
@@ -668,6 +672,11 @@ header {
     width: 100%;
   }
 }
+@media screen and (max-width: 768px) {
+  .about_column {
+    float: none;
+  }
+}
 
 .about_logo,
 .about_map {
@@ -680,6 +689,11 @@ header {
   padding: 0 50px;
   margin: 50px 0;
 }
+@media screen and (max-width: 768px) {
+  .about_info {
+    padding: 0 20px;
+  }
+}
 
 .about_intro {
   display: block;
@@ -687,6 +701,17 @@ header {
   position: relative;
   width: 540px;
   height: 303.75px;
+}
+@media screen and (max-width: 768px) {
+  .about_intro {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about_intro {
+    height: 56.25vw;
+    padding: 0 20px;
+  }
 }
 
 .about_introImage {
@@ -1039,6 +1064,18 @@ footer {
 }
 
 /* module */
+@media screen and (max-width: 768px) {
+  .g-pcOnly {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .g-smallOnly {
+    display: none;
+  }
+}
+
 .header_comming {
   font-size: 28px;
   font-weight: 200;
