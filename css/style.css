@@ -638,6 +638,7 @@ header {
 }
 @media screen and (min-width: 769px) {
   .selectApp {
+    width: 100%;
     position: absolute;
     height: 100%;
   }
@@ -648,6 +649,7 @@ header {
   }
   .selectApp .header_logo {
     height: 100%;
+    width: 50%;
     text-align: center;
     color: white;
     position: absolute;
@@ -663,6 +665,8 @@ header {
     position: absolute;
     top: 0;
     bottom: 0;
+    left: 0;
+    right: 0;
     margin: auto;
   }
   .selectApp a:hover {
