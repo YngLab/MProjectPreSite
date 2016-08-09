@@ -1269,7 +1269,13 @@ footer {
 
 .upload_message {
   display: block;
-  margin: 100px auto;
+  margin: 100px;
+  width: 1080px;
+}
+@media screen and (max-width: 768px) {
+  .upload_message {
+    width: 100%;
+  }
 }
 
 /* module */

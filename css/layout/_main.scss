@@ -495,5 +495,9 @@ footer{
 
 .upload_message{
   display: block;
-  margin: 100px auto;
+  margin: 100px;
+  width: 1080px;
+  @media #{$small} {
+    width: 100%;
+  }
 }
