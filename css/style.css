@@ -1267,6 +1267,11 @@ footer {
   }
 }
 
+.upload_message {
+  display: block;
+  margin: 100px auto;
+}
+
 /* module */
 @media screen and (max-width: 768px) {
   .g-pcOnly {

@@ -48,8 +48,18 @@ mb_internal_encoding("UTF-8");
 if(mb_send_mail($_SESSION['mail'],"【お問い合わせ】確認メール",$return,$add_header)&&mb_send_mail('info@hakodate-miraiproject.jp',"問い合わせがありました",$message,$add_header)){
 
 $contents = <<<END
+
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<link rel="stylesheet" href="../css/style.css">
+<title>はこだてキッズプラザ・はこだてみらい館 告知サイト</title>
+
+<p class="upload_message">
 送信が完了しました。<br>
 5秒後に <a href="../index.html#contact">元のページ</a> に移動します。<br>
+</p>
+
 <script type="text/javascript">
 <!--
 setTimeout(function(){
