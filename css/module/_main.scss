@@ -121,6 +121,34 @@
   }
 }
 
+.contact-confirm{
+  position: absolute;
+  height: 100%;
+}
+
+.contact_button-confirm{
+  width: 45%;
+  @media #{$small} {
+    display: inline-block;
+  }
+}
+
+.contact_button-fix{
+  margin-right: 7%;
+}
+
 .contact-spamBlock{
   display: none;
+}
+
+.footer-confirm{
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  @media #{$small} {
+    padding: 10px;
+  }
+  .footer_inner{
+    width: auto;
+  }
 }

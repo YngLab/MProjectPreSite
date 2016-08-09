@@ -1132,6 +1132,14 @@ header {
     min-width: 100%;
   }
 }
+#contact h2 {
+  border-bottom: none;
+  font-weight: 200;
+  width: auto;
+}
+#contact a {
+  color: #fdfdfd;
+}
 
 .contact_inner {
   margin: 5px auto;
@@ -1411,6 +1419,38 @@ footer {
   }
 }
 
+.contact-confirm {
+  position: absolute;
+  height: 100%;
+}
+
+.contact_button-confirm {
+  width: 45%;
+}
+@media screen and (max-width: 768px) {
+  .contact_button-confirm {
+    display: inline-block;
+  }
+}
+
+.contact_button-fix {
+  margin-right: 7%;
+}
+
 .contact-spamBlock {
   display: none;
+}
+
+.footer-confirm {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+}
+@media screen and (max-width: 768px) {
+  .footer-confirm {
+    padding: 10px;
+  }
+}
+.footer-confirm .footer_inner {
+  width: auto;
 }
