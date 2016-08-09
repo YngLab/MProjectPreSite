@@ -49,11 +49,11 @@ if(mb_send_mail($_SESSION['mail'],"【お問い合わせ】確認メール",$ret
 
 $contents = <<<END
 送信が完了しました。<br>
-5秒後に <a href="../">元のページ</a> に移動します。<br>
+5秒後に <a href="../index.html#contact">元のページ</a> に移動します。<br>
 <script type="text/javascript">
 <!--
 setTimeout(function(){
-  location.replace('../');
+  location.replace('../index.html#contact');
 }, 5000);
 -->
 </script>
