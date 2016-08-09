@@ -360,8 +360,9 @@ header{
   th{
     padding-right: 30px;
     @media #{$small} {
-      padding-left: 10px;
-      padding-right: 0;
+      //padding-left: 10px;
+      //padding-right: 0;
+      display: none;
     }
   }
 }

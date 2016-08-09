@@ -1084,8 +1084,7 @@ header {
 }
 @media screen and (max-width: 768px) {
   .accessTable th {
-    padding-left: 10px;
-    padding-right: 0;
+    display: none;
   }
 }
 
