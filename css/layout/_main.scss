@@ -270,9 +270,6 @@ header{
   @media #{$small} {
     margin: 10px 0;
     padding: 0 20px;
-    br{
-      display: none;
-    }
   }
 }
 
@@ -494,3 +491,11 @@ footer{
   }
 }
 
+.upload_message{
+  display: block;
+  margin: 100px;
+  width: 1080px;
+  @media #{$small} {
+    width: 100%;
+  }
+}
