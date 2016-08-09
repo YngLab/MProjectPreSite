@@ -4,6 +4,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 <link rel="shortcut icon" href="img/favicon16.ico">
 <link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/chkForm.js"></script>
 <title>はこだてキッズプラザ・はこだてみらい館 告知サイト</title>
 
 <header>
@@ -395,25 +397,25 @@
         <tr>
           <td class="contact_table-head">お名前</td>
           <td class="contact_table-form">
-            <input type="text" name="name" class="contact_inputForm">
+            <input id="contact_name" type="text" name="name" class="contact_inputForm">
           </td>
         </tr>
         <tr>
           <td>メールアドレス</td>
           <td>
-            <input type="text" name="mail" class="contact_inputForm">
+            <input id="contact_mail" type="text" name="mail" class="contact_inputForm">
           </td>
         </tr>
         <tr>
           <td>本文</td>
           <td>
-            <textarea name="message"class="contact_inputForm contact_inputForm-long"></textarea>
+            <textarea id="contact_message" name="message"class="contact_inputForm contact_inputForm-long"></textarea>
           </td>
         </tr>
         <tr>
           <td></td>
           <td>
-            <input type="submit" value="入力内容を確認する" class="contact_button">
+            <input id="contact_submit" type="submit" value="入力内容を確認する" class="contact_button">
           </td>
         </tr>
       </table>

@@ -638,9 +638,10 @@ header {
 }
 @media screen and (min-width: 769px) {
   .selectApp {
-    width: 100%;
     position: absolute;
     height: 100%;
+    min-width: 100% !important;
+    width: 100%;
   }
   .selectApp:after {
     clear: both;
@@ -668,6 +669,7 @@ header {
     left: 0;
     right: 0;
     margin: auto;
+    width: 100%;
   }
   .selectApp a:hover {
     opacity: .7;
@@ -1195,7 +1197,7 @@ header {
   color: #fdfdfd;
 }
 #contact p {
-  font-size: 2em;
+  font-size: 16.8px;
   text-align: center;
 }
 
@@ -1309,7 +1311,7 @@ footer {
     display: block;
     height: auto;
     margin: 2em auto;
-    width: 57%;
+    height: 51px;
     position: static;
     bottom: 0;
     right: 0;
@@ -1477,9 +1479,11 @@ footer {
   }
 }
 
-.contact-confirm {
-  position: absolute;
-  height: 100%;
+@media screen and (min-width: 769px) {
+  .contact-confirm {
+    position: absolute;
+    height: 100%;
+  }
 }
 
 .contact_button-confirm {
@@ -1500,9 +1504,13 @@ footer {
 }
 
 .footer-confirm {
-  position: absolute;
-  bottom: 0;
   padding: 20px;
+}
+@media screen and (min-width: 769px) {
+  .footer-confirm {
+    position: absolute;
+    bottom: 0;
+  }
 }
 @media screen and (max-width: 768px) {
   .footer-confirm {

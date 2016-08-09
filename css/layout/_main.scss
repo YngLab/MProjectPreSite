@@ -46,9 +46,10 @@ header{
     }
   }
   @media #{$normal} {
-    width: 100%;
     position: absolute;
     height: 100%;
+    min-width: 100% !important;
+    width: 100%;
     @include clearfix;
     .header_logo{
       height: 100%;
@@ -71,6 +72,7 @@ header{
       left: 0;
       right: 0;
       margin: auto;
+      width: 100%;
     }
     a:hover{
       opacity: .7;
@@ -455,7 +457,7 @@ header{
     color: $contact__fontColor;
   }
   p{
-    font-size: 2em;
+    font-size: $contact__fontSize * 1.2;
     text-align: center;
   }
 }
@@ -534,7 +536,7 @@ footer{
     display: block;
     height: auto;
     margin: 2em auto;
-    width: 57%;
+    height: 51px;
 
     position: static;
     bottom: 0;
