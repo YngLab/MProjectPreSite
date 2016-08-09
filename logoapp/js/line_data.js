@@ -457,6 +457,9 @@ LineAppFramework.prototype.onClickUploadButton = function() {
 	completeDialog.dialog("close");
 };
 LineAppFramework.prototype.onClickUploadButton = function() {
+
+	return;
+
 	clearInterval(this.completeLoopInterval	);
 	var encoder = new GIFEncoder();
 	encoder.setRepeat(0);

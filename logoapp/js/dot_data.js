@@ -408,7 +408,11 @@ DotAppFramework.prototype.onClickNotCompleteButton = function() {
 	clearInterval(this.completeLoopInterval	);
 	completeDialog.dialog("close");
 };
+
 DotAppFramework.prototype.onClickUploadButton = function() {
+
+	return;
+
 	clearInterval(this.completeLoopInterval	);
 	var encoder = new GIFEncoder();
 	encoder.setRepeat(0);
