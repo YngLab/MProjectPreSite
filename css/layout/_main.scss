@@ -167,7 +167,7 @@ header{
   display: block;
   margin: auto;
   text-decoration: none;
-  width: 200px;
+  width: 220px;
   @media #{$small} {
     margin-top: 20px;
   }
@@ -360,8 +360,9 @@ header{
   th{
     padding-right: 30px;
     @media #{$small} {
-      padding-left: 10px;
-      padding-right: 0;
+      //padding-left: 10px;
+      //padding-right: 0;
+      display: none;
     }
   }
 }
