@@ -620,6 +620,56 @@ header {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .selectApp .header_logo {
+    height: 50%;
+    position: absolute;
+  }
+  .selectApp .header_logo-future {
+    bottom: 0;
+  }
+  .selectApp .header_logoImage {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 769px) {
+  .selectApp {
+    position: absolute;
+    height: 100%;
+  }
+  .selectApp:after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+  .selectApp .header_logo {
+    height: 100%;
+    text-align: center;
+    color: white;
+    position: absolute;
+  }
+  .selectApp .header_logo-kids {
+    left: 0;
+  }
+  .selectApp .header_logo-future {
+    right: 0;
+  }
+  .selectApp .header_logoImage {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .selectApp a:hover {
+    opacity: .7;
+  }
+}
+
 #logos {
   min-width: 1080px;
 }

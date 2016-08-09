@@ -28,6 +28,53 @@ header{
   }
 }
 
+.selectApp{
+  @media #{$small} {
+    .header_logo{
+      height: 50%;
+      position: absolute;
+    }
+    .header_logo-future{
+      bottom: 0;
+    }
+    .header_logoImage{
+      position: absolute;
+      display: block;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+  @media #{$normal} {
+    position: absolute;
+    height: 100%;
+    @include clearfix;
+    .header_logo{
+      height: 100%;
+      text-align: center;
+      color: white;
+      position: absolute;
+    }
+    .header_logo-kids{
+      left: 0;
+    }
+    .header_logo-future{
+      right: 0;
+    }
+    .header_logoImage{
+      display: block;
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    a:hover{
+      opacity: .7;
+    }
+  }
+}
+
 #logos{
   @include clearfix;
   min-width: $pc__w;
