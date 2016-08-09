@@ -620,10 +620,18 @@ header {
   }
 }
 
-.header_logos:after {
+#logos {
+  min-width: 1080px;
+}
+#logos:after {
   clear: both;
   content: "";
   display: block;
+}
+@media screen and (max-width: 768px) {
+  #logos {
+    min-width: 100%;
+  }
 }
 
 .header_logo {
@@ -1054,6 +1062,11 @@ header {
     width: 100%;
   }
 }
+@media screen and (max-width: 768px) {
+  #access {
+    font-size: 14px;
+  }
+}
 
 .accessTable {
   text-align: left;
@@ -1072,6 +1085,7 @@ header {
 @media screen and (max-width: 768px) {
   .accessTable th {
     padding-left: 10px;
+    padding-right: 0;
   }
 }
 
