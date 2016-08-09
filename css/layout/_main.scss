@@ -1,69 +1,57 @@
 header{
   min-width: $pc__w;
+  @include smallW;
+  @media #{$small} {
+    min-width: 100%;
+  }
+}
+
+.header_top{
+  margin: 0 auto;
+  padding: 20px 20px 0 0;
+  text-align: right;
+  width: $pc__w;
+  @include smallW;
+  @media #{$small} {
+    padding: 10px 0;
+    text-align: center;
+    @include clearfix;
+  }
 }
 
 .header_comming{
   height: $header_comming__h;
   margin: 0;
   width: 100%;
+  @media #{$small} {
+    padding-top: 10px;
+  }
 }
 
-.header_logos{
+#logos{
   @include clearfix;
+  min-width: $pc__w;
+  @media #{$small} {
+    min-width: 100%;
+  }
 }
 
 .header_logo{
   float: left;
   width: 50%;
+  @include smallW;
+  @media #{$small} {
+    float: none;
+  }
 }
 
 .header_logoImage{
   width: $pc__w / 2;
+  @include smallW;
 }
 
 .header_logo-kids{
   text-align: right;
-}
-
-.header_buttons{
-  background-color: $header_button__bgc;
-  border-bottom: $header_buttons__bbColor 3px solid ;
-  height: $header_buttons__h;
-  position: relative;
-  text-align: center;
-  width: 100%;
-  @include clearfix;
-}
-
-.header_buttons-lets{
-  margin:{
-    bottom: 0;
-    left: calc(50% - 208px / 2);
-    right: 0;
-    top: ($header_buttons__h - 39) / 2 - 1px;
-  }
-  position: absolute;
-}
-
-.header_button{
-  float: left;
-  height: $header_buttons__h;
-  width: 50%;
-}
-
-.header_buttonInner{
-  border-bottom: $header_buttons__bbColor 3px solid ;
-  display: block;
-  height: $header_buttons__h;
-  width: $pc__w / 2;
-}
-
-.header_buttonInner-first{
-  margin: 0 0 0 auto;
-}
-
-.header_buttonImage{
-  margin: 19px 0 0 0;
 }
 
 #comming{
@@ -75,20 +63,23 @@ header{
 
 #about{
   margin:{
-    top: 150px;
+    top: 0;
     right: auto;
     bottom: 100px;
     left: auto;
   }
   width: $pc__w;
+  @include smallW;
   @include clearfix;
 }
 
 .about_column{
   float: left;
-  margin-left: ($pc__w - 2 * $about_column__w - $about_column__mr) / 2;
-  margin-right: $about_column__mr - ($pc__w - 2 * $about_column__w - $about_column__mr) / 2;
-  width: $about_column__w;
+  width: $pc__w / 2;
+  @include smallW;
+  @media #{$small} {
+    float: none;
+  }
 }
 
 .about_logo,
@@ -98,26 +89,111 @@ header{
 }
 
 .about_info{
-  margin-bottom: 50px;
+  font-size: $about__fontSize;
+  padding: 0 50px;
+  margin: 50px 0;
+  @media #{$small} {
+    padding: 0 20px;
+  }
+}
+
+.about_intro{
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+  width: $about_intro__w;
+  @include aspect34($about_intro__w);
+  @include smallW;
+  @media #{$small} {
+    height: 56.25vw; //ignore coding rule
+  }
 }
 
 .about_introImage{
-  display: block;
+  bottom: 0;
   height: auto;
-  margin-bottom: 30px;
-  width: $about_column__w;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
 }
 
+.about_introTitle{
+  bottom: 15px;
+  color: $about_intro__fontColor;
+  left: 20px;
+  margin: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+#logoApp,
 #movie{
-  font-weight: bold;
-  margin-bottom: 100px;
-  min-width: $pc__w;
+  margin: 0 auto 100px auto;
+  width: $pc__w;
+  @include smallW;
+  @media #{$small} {
+    padding: 0 20px;
+  }
+}
+
+.logoApp_example{
+  width: $pc__w;
+  @include smallW;
+  @include clearfix;
+}
+
+.logoApp_exampleTable{
+  float: left;
+  height: $pc__w / 2;
+  margin-bottom: 20px;
+  width: $pc__w / 2;
+  @include smallW;
+  @media #{$small} {
+    height: auto;
+    margin-bottom: 0;
+  }
+  td{
+    width: 25%;
+  }
+}
+
+.logoApp_exampleImage{
+  width: 100%;
+}
+
+.logoApp_link{
+  display: block;
+  margin: auto;
+  text-decoration: none;
+  width: 220px;
+  @media #{$small} {
+    margin-top: 20px;
+  }
+}
+
+.logoApp_linkButton{
+  border: 2px solid $g__fontColor;
+  border-radius: 5px;
+  color: $g__fontColor;
+  margin: auto;
+  padding: 15px;
   text-align: center;
+  transition: .1s;
+  &:hover{
+    background-color: $g__fontColor;
+    color: $g__bgc;
+  }
 }
 
 .movie_youtube{
   height: $pc__w / 16 * 9;
   width: $pc__w;
+  @include smallW;
+  @media #{$small} {
+    height: 56.25vw; //ignore coding rule
+  }
 }
 
 #events{
@@ -125,13 +201,19 @@ header{
 }
 
 .event{
-  margin: 0 auto 70px auto;
+  margin: 0 auto 100px auto;
   text-align: left;
   width: $pc__w;
   @include clearfix;
+  @include smallW;
 }
+
 .event_title{
   margin: 0 0 5px 0;
+  @media #{$small} {
+    margin-bottom: 20px;
+    padding: 0 20px;
+  }
 }
 
 .event_image{
@@ -139,11 +221,21 @@ header{
   height: auto;
   margin-right: 50px;
   width: $event_image__w;
+  @include smallW;
+  @media #{$small} {
+    margin-bottom: 20px;
+  }
 }
 
 .event_detail{
   float: left;
   margin: 10px 0;
+  @media #{$small} {
+    float: none;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0 20px;
+  }
 }
 
 .event_info-left{
@@ -154,22 +246,73 @@ header{
   float: left;
   margin: 10px 0;
   width: $pc__w - $event_image__w - 50px;
+  @include smallW;
+  @media #{$small} {
+    padding: 0 20px;
+    margin: 20px 0;
+  }
+}
+
+#recruit{
+  letter-spacing: 0.1em;
+  margin: -100px auto 100px auto;
+  padding-top: 100px;
+  width: $pc__w;
+  @include clearfix;
+  @include smallW;
+}
+
+.recruit_2colomn{
+  float: left;
+  margin: -50px 0 0 0;
+  width: $pc__w / 2;
+  @include smallW;
+  @media #{$small} {
+    margin: 10px 0;
+    padding: 0 20px;
+  }
+}
+
+.recruit_title{
+  font-size: $recruit_title__fontSize;
+  font-weight: normal;
+}
+
+.recruit_info{
+  font-size: $recruit_info__fontSize;
 }
 
 #info{
   font-size: $info__fontSize;
-  margin: 0 auto 50px auto;
+  margin: 0 auto 100px auto;
   text-align: center;
   width: $pc__w;
   @include clearfix;
+  @include smallW;
 }
 
 .info_table{
   line-height: 50px;
-  margin-bottom: 70px;
   text-align: left;
   tr{
     border-bottom: 1px solid;
+  }
+  tr.info_tableMap{
+    border-bottom: hidden;
+  }
+  @media #{$small} {
+    font-size: 1em;
+    letter-spacing: .1em;
+    line-height: 2.5em;
+    margin: 0 10px 50px 10px;
+    width: calc(100% - 20px);
+    th{
+      padding: 0 2%;
+      width: 23%;
+    }
+    td{
+      padding-right: 2%;
+    }
   }
 }
 
@@ -180,28 +323,49 @@ header{
 .info_table-kids,
 .info_table-future{
   width: $info_table-main__w;
+  @include smallW;
+  @media #{$small} {
+    margin-bottom: 10px;
+    text-align: center;
+  }
 }
 
 .info_map{
-  float: left;
   height: auto;
-  margin-right: 25px;
-  width: 440px;
+  width: 100%;
 }
 
 #access{
-  margin-top: 75px;
+  margin: 0 auto 100px auto;
+  width: $pc__w;
+  @include smallW;
+  @media #{$small} {
+    font-size: 14px;//ignore cording rule
+  }
 }
 
-.info_accessTable{
+.accessTable{
   text-align: left;
   letter-spacing: 0em;
-}
-.info_accessIcon{
-  margin: 0 10px;
+  line-height: 50px;
+  width: 100%;
+  @media #{$normal} {
+    tr.accessTable-far{
+      line-height: 100px;
+    }
+  }
+  th{
+    padding-right: 30px;
+    @media #{$small} {
+      //padding-left: 10px;
+      //padding-right: 0;
+      display: none;
+    }
+  }
 }
 
-.info_accessTableHead{
+.accessIcon{
+  height: 30px;
   margin: 0 10px;
 }
 
@@ -209,6 +373,7 @@ header{
   margin: 0 auto 30px auto;
   width: $pc__w;
   @include clearfix;
+  @include smallW;
 }
 
 .g-snsButton{
@@ -227,11 +392,28 @@ header{
   padding: 25px;
   padding-bottom: 50px;
   width: 100%;
+  @include smallW;
+  @media #{$small} {
+    min-width: 100%;
+  }
+  h2{
+    border-bottom: none;
+    font-weight: 200;
+    width: auto;
+  }
+  a{
+    color: $contact__fontColor;
+  }
+  p{
+    font-size: 2em;
+    text-align: center;
+  }
 }
 
 .contact_inner{
   margin: 5px auto;
   max-width: $pc__w;
+  @include smallW;
 }
 
 .contact_title{
@@ -240,22 +422,29 @@ header{
 
 .contact_formTable{
   width: 95%;
+  @include smallW;
   tr{
     margin-bottom: 10px;
   }
   td{
     vertical-align: top;
+    @include smallW;
+    @media #{$small} {
+      display: block;
+    }
   }
 }
 
 .contact_inputForm{
   margin-bottom: 15px;
   width: 55%;
+  @include smallW;
 }
 
 .contact_inputForm-long{
   height: 120px;
   width: 98%;
+  @include smallW;
 }
 
 .contact_table-head{
@@ -267,8 +456,12 @@ footer{
   color: $footer__fontColor;
   font-size: $footer__fontSize;
   line-height: 1em;
-  min-width: pc__w;
+  min-width: $pc__w;
   width: 100%;
+  @include smallW;
+  @media #{$small} {
+    min-width: 100%;
+  }
 }
 
 .footer_inner{
@@ -276,11 +469,45 @@ footer{
   padding: 10px;
   width: $pc__w;
   position: relative;
+  @include smallW;
+  @media #{$small} {
+    position: static;
+  }
+}
+
+.footer_snsButton{
+  height: 30px;
+  position: absolute;
+  bottom: 20px;
+  right: 280px;
+  @media #{$small} {
+    display: block;
+    height: auto;
+    margin: 2em auto;
+    width: 57%;
+
+    position: static;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 .footer_text-copyright{
   position: absolute;
   bottom: 10px;
   right: 10px;
+  @media #{$small} {
+    position: static;
+    bottom: 0;
+    right: 0;
+  }
 }
 
+.upload_message{
+  display: block;
+  margin: 100px;
+  width: 1080px;
+  @media #{$small} {
+    width: 100%;
+  }
+}

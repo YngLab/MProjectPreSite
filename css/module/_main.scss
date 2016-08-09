@@ -1,13 +1,28 @@
+.g-pcOnly{
+  @media #{$small} {
+    display: none;
+  }
+}
+
+.g-smallOnly{
+  @media #{$normal} {
+    display: none;
+  }
+}
+
 .header_comming{
-  background-color: $header_comming__bgc;
-  color: $header_comming__fontColor;
   font-size: $header_comming__fontSize;
-  font-weight: normal;
+  font-weight: 200;
   text-align: center;
+  @media #{$small} {
+    font-size: 4vw;
+    height: auto;
+    letter-spacing: .1em;
+  }
 }
 
 .header_comming-em{
-  font-size: $header_comming-em__fontSize;
+  font-size: 1.7em;
 }
 
 .header_logo-kids{
@@ -34,6 +49,7 @@
 .header_recruit,
 .header_news{
   font-size: $header_recruit__fontSize;
+  margin: 0 10px;
   a{
     color: $header_comming__fontColor;
     text-decoration: none;
@@ -45,13 +61,30 @@
       }
     }
   }
+  @media #{$small} {
+    display: block;
+    float: left;
+    font-size: 4vw;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 50%;
+  }
 }
 
 .header_newsLogo{
   height: 18px;
   margin-bottom: 5px;
-  margin-right: 7px;
+  margin-left: 7px;
 
+}
+
+.about_info-kidsIntro{
+  color: $g__color-kids;
+}
+
+.about_info-introFuture{
+  color: $g__color_future;
 }
 
 .info_table-kids{
@@ -80,10 +113,42 @@
   padding: 15px 25px;
   &:hover{
     background-color: ($contact_button__bgc + $contact__bgc) / 2;
-
   }
+  @media #{$small} {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+  }
+}
+
+.contact-confirm{
+  position: absolute;
+  height: 100%;
+}
+
+.contact_button-confirm{
+  width: 45%;
+  @media #{$small} {
+    display: inline-block;
+  }
+}
+
+.contact_button-fix{
+  margin-right: 7%;
 }
 
 .contact-spamBlock{
   display: none;
+}
+
+.footer-confirm{
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  @media #{$small} {
+    padding: 10px;
+  }
+  .footer_inner{
+    width: auto;
+  }
 }
