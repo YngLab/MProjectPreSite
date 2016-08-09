@@ -747,6 +747,10 @@ DotTutorial.prototype.onClickNextButton = function() {
 		} else if(this.currentPage==4) {
 			this.onClickPageButton5();
 		}
+	} else if(this.currentPage==5) {
+		clearInterval(this.setIV);
+		document.getElementById("tutorialDialog").style.display = "none";
+		document.getElementsByClassName("appContainer")[0].style.display = "block";
 	}
 };
 DotTutorial.prototype.onClickPageButton1 = function() {

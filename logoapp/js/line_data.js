@@ -457,9 +457,7 @@ LineAppFramework.prototype.onClickUploadButton = function() {
 	completeDialog.dialog("close");
 };
 LineAppFramework.prototype.onClickUploadButton = function() {
-
 	return;
-
 	clearInterval(this.completeLoopInterval	);
 	var encoder = new GIFEncoder();
 	encoder.setRepeat(0);
@@ -737,6 +735,9 @@ LineTutorial.prototype.onClickNextButton = function() {
 		} else if(this.currentPage==4) {
 			this.onClickPageButton5();
 		}
+	} else if(this.currentPage==5) {
+		tutorialDialog.dialog("close");
+		clearInterval(this.setIV);
 	}
 };
 LineTutorial.prototype.onClickPageButton1 = function() {
