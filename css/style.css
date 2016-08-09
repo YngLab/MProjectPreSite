@@ -1140,6 +1140,10 @@ header {
 #contact a {
   color: #fdfdfd;
 }
+#contact p {
+  font-size: 2em;
+  text-align: center;
+}
 
 .contact_inner {
   margin: 5px auto;
