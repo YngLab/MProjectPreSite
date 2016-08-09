@@ -817,7 +817,7 @@ header {
   display: block;
   margin: auto;
   text-decoration: none;
-  width: 200px;
+  width: 220px;
 }
 @media screen and (max-width: 768px) {
   .logoApp_link {
@@ -968,9 +968,6 @@ header {
     margin: 10px 0;
     padding: 0 20px;
   }
-  .recruit_2colomn br {
-    display: none;
-  }
 }
 
 .recruit_title {
@@ -1084,8 +1081,7 @@ header {
 }
 @media screen and (max-width: 768px) {
   .accessTable th {
-    padding-left: 10px;
-    padding-right: 0;
+    display: none;
   }
 }
 
@@ -1269,7 +1265,13 @@ footer {
 
 .upload_message {
   display: block;
-  margin: 100px auto;
+  margin: 100px;
+  width: 1080px;
+}
+@media screen and (max-width: 768px) {
+  .upload_message {
+    width: 100%;
+  }
 }
 
 /* module */

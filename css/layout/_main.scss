@@ -167,7 +167,7 @@ header{
   display: block;
   margin: auto;
   text-decoration: none;
-  width: 200px;
+  width: 220px;
   @media #{$small} {
     margin-top: 20px;
   }
@@ -270,9 +270,6 @@ header{
   @media #{$small} {
     margin: 10px 0;
     padding: 0 20px;
-    br{
-      display: none;
-    }
   }
 }
 
@@ -360,8 +357,9 @@ header{
   th{
     padding-right: 30px;
     @media #{$small} {
-      padding-left: 10px;
-      padding-right: 0;
+      //padding-left: 10px;
+      //padding-right: 0;
+      display: none;
     }
   }
 }
@@ -495,5 +493,9 @@ footer{
 
 .upload_message{
   display: block;
-  margin: 100px auto;
+  margin: 100px;
+  width: 1080px;
+  @media #{$small} {
+    width: 100%;
+  }
 }
