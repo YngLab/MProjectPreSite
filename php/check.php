@@ -10,7 +10,7 @@ $_SESSION = $_POST;
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-<link rel="shortcut icon" href="img/favicon16.ico">
+<link rel="shortcut icon" href="../img/favicon16.ico">
 <link rel="stylesheet" href="../css/style.css">
 <title>はこだてキッズプラザ・はこだてみらい館 告知サイト</title>
 

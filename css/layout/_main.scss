@@ -28,6 +28,55 @@ header{
   }
 }
 
+.selectApp{//ignore cording rule
+  @media #{$small} {
+    .header_logo{
+      height: 50%;
+      position: absolute;
+    }
+    .header_logo-future{
+      bottom: 0;
+    }
+    .header_logoImage{
+      position: absolute;
+      display: block;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+  @media #{$normal} {
+    position: absolute;
+    height: 100%;
+    min-width: 100% !important;
+    width: 100%;
+    @include clearfix;
+    .header_logo{
+      height: 100%;
+      width: 50%;
+      text-align: center;
+      color: white;
+      position: absolute;
+    }
+    .header_logo-kids{
+      left: 0;
+    }
+    .header_logo-future{
+      right: 0;
+    }
+    .header_logoImage{
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 100%;
+    }
+  }
+}
+
 #logos{
   @include clearfix;
   min-width: $pc__w;
@@ -405,7 +454,7 @@ header{
     color: $contact__fontColor;
   }
   p{
-    font-size: 2em;
+    font-size: $contact__fontSize * 1.2;
     text-align: center;
   }
 }
@@ -484,7 +533,7 @@ footer{
     display: block;
     height: auto;
     margin: 2em auto;
-    width: 57%;
+    height: 51px;
 
     position: static;
     bottom: 0;

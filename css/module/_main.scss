@@ -122,8 +122,10 @@
 }
 
 .contact-confirm{
-  position: absolute;
-  height: 100%;
+  @media #{$normal} {
+    position: absolute;
+    height: 100%;
+  }
 }
 
 .contact_button-confirm{
@@ -142,8 +144,10 @@
 }
 
 .footer-confirm{
-  position: absolute;
-  bottom: 0;
+  @media #{$normal} {
+    position: absolute;
+    bottom: 0;
+  }
   padding: 20px;
   @media #{$small} {
     padding: 10px;
