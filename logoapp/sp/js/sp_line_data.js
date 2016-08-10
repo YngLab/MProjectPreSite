@@ -466,7 +466,10 @@ LineAppFramework.prototype.onClickPlayButton = function() {
 LineAppFramework.prototype.onClickCompleteButton = function() {
 	if(this.buttonActive.complete) {
 		var that = this;
-		completeDialog.dialog("open");
+		//completeDialog.dialog("open");
+		document.getElementsByClassName("appContainer")[0].style.display = "none";
+		document.getElementById("completeDialog").style.display = "block";
+
 		this.completeViewTime = 0;
 		this.completeViewFrame = 1;
 		this.completeLoopInterval = setInterval(this.completeLoop.bind(this), 33);
@@ -475,12 +478,9 @@ LineAppFramework.prototype.onClickCompleteButton = function() {
 LineAppFramework.prototype.onClickNotCompleteButton = function() {
 	this.drawButton();
 	clearInterval(this.completeLoopInterval	);
-	completeDialog.dialog("close");
-};
-LineAppFramework.prototype.onClickUploadButton = function() {
-	this.drawButton();
-	clearInterval(this.completeLoopInterval	);
-	completeDialog.dialog("close");
+	//completeDialog.dialog("close");
+	document.getElementsByClassName("appContainer")[0].style.display = "block";
+	document.getElementById("completeDialog").style.display = "none";
 };
 LineAppFramework.prototype.onClickUploadButton = function() {
 	return;
@@ -518,6 +518,7 @@ LineAppFramework.prototype.onClickUploadButton = function() {
 	//URL.revokeObjectURL(url);
 
 	//download blob
+	/*
 	var FileName = "lineanime.gif"
 
 	if (window.navigator.msSaveBlob) {
@@ -531,6 +532,7 @@ LineAppFramework.prototype.onClickUploadButton = function() {
 		a.click();
 		document.body.removeChild(a) //  FireFox specification
 	}
+	*/
 
 	/*
 	//show blob <img>

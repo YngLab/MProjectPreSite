@@ -12,8 +12,10 @@ function init() {
   //document.body.ontouchstart = function(e) { e.preventDefault(); };
 
   sp_window();
+  
   document.getElementsByClassName("appContainer")[0].style.display = "none";
   document.getElementById("tutorialDialog").style.display = "block";
+  document.getElementById("completeDialog").style.display = "none";
 
     copyDialog = $("#copyDialog").dialog({
     	dialogClass: 'noTitleDialog',
@@ -21,6 +23,9 @@ function init() {
     	width: 260,
     	modal: true
     });
+
+
+  /*
     completeDialog = $("#completeDialog").dialog({
     	dialogClass: 'noTitleDialog',
     	autoOpen: false,
@@ -28,7 +33,9 @@ function init() {
     	height: 600,
     	modal: true
     });
-    /*
+  */
+
+  /*
     tutorialDialog = $("#tutorialDialog").dialog({
         dialogClass: 'noTitleDialog',
         autoOpen: false,
@@ -36,7 +43,7 @@ function init() {
         height: document.body.clientHeight,
         modal: true
     });
-    */
+  */
     dotTutorial = new DotTutorial();
     dotTutorial.start();
     //myform.mytext.value = 'init';
