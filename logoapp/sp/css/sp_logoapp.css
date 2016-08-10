@@ -350,7 +350,7 @@ html {
 }
 .completeLeftContainer {
   position: absolute;
-  bottom: 5%;
+  bottom: 10%;
   left: 0;
 }
 .completeLeftBlock {
@@ -374,7 +374,7 @@ html {
 }
 .completeRightContainer {
   position: absolute;
-  bottom: 5%;
+  bottom: 10%;
   right: 120px;
 }
 .completeRightBlock {
