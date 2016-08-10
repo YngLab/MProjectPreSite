@@ -95,7 +95,7 @@ header{
 }
 
 .header_logo{
-  float: left;
+  float: right;
   width: 50%;
   @include smallW;
   @media #{$small} {
@@ -108,7 +108,7 @@ header{
   @include smallW;
 }
 
-.header_logo-kids{
+.header_logo-future{
   text-align: right;
 }
 
@@ -132,7 +132,7 @@ header{
 }
 
 .about_column{
-  float: left;
+  float: right;
   width: $pc__w / 2;
   @include smallW;
   @media #{$small} {
@@ -203,7 +203,7 @@ header{
 }
 
 .logoApp_exampleTable{
-  float: left;
+  float: right;
   height: $pc__w / 2;
   margin-bottom: 20px;
   width: $pc__w / 2;
