@@ -699,7 +699,7 @@ header {
 }
 
 .header_logo {
-  float: left;
+  float: right;
   width: 50%;
 }
 @media screen and (max-width: 768px) {
@@ -722,7 +722,7 @@ header {
   }
 }
 
-.header_logo-kids {
+.header_logo-future {
   text-align: right;
 }
 
@@ -752,7 +752,7 @@ header {
 }
 
 .about_column {
-  float: left;
+  float: right;
   width: 540px;
 }
 @media screen and (max-width: 768px) {
@@ -853,7 +853,7 @@ header {
 }
 
 .logoApp_exampleTable {
-  float: left;
+  float: right;
   height: 540px;
   margin-bottom: 20px;
   width: 540px;
