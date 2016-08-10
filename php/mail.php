@@ -53,7 +53,7 @@ $content =<<<HTML
 <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 <link rel="shortcut icon" href="../img/favicon16.ico">
 <link rel="stylesheet" href="../css/style.css">
-<title>はこだてキッズプラザ・はこだてみらい館 告知サイト</title>
+<title>はこだてみらい館・はこだてキッズプラザ 告知サイト</title>
 
 <div id="contact" class="contact-confirm">
   <h2>送信が完了しました。</h2>
