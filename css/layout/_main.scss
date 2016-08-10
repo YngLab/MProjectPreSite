@@ -29,6 +29,7 @@ header{
 }
 
 .selectApp{//ignore cording rule
+  width: 100%;
   @media #{$small} {
     .header_logo{
       height: 50%;

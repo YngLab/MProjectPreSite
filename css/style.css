@@ -620,6 +620,9 @@ header {
   }
 }
 
+.selectApp {
+  width: 100%;
+}
 @media screen and (max-width: 768px) {
   .selectApp .header_logo {
     height: 50%;
