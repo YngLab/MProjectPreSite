@@ -210,7 +210,7 @@ function sp_window() {
     mainSize = sp_mainBlock.width();
     previewSize = sp_previewBlock.width();
     var buttonWidth = sp_button.width()*0.2;
-    var buttonHeight = sp_button.width()*0.15;
+    var buttonHeight = sp_button.width()*0.2;
     sp_mainCanvas.outerWidth(sp_mainBlock.width());
     sp_mainCanvas.outerHeight(sp_mainBlock.width() * 1.0);
     sp_previewCanvas.outerWidth(sp_previewBlock.width());
