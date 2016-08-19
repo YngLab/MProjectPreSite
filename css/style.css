@@ -620,6 +620,9 @@ header {
   }
 }
 
+.selectApp {
+  width: 100%;
+}
 @media screen and (max-width: 768px) {
   .selectApp .header_logo {
     height: 50%;
@@ -633,7 +636,12 @@ header {
     display: block;
     top: 0;
     bottom: 0;
+    left: 0;
+    right: 0;
     margin: auto;
+    height: 100%;
+    width: auto;
+    min-width: 100%;
   }
 }
 @media screen and (min-width: 769px) {
@@ -669,7 +677,10 @@ header {
     left: 0;
     right: 0;
     margin: auto;
-    width: 100%;
+    height: auto;
+    max-height: 100%;
+    width: auto;
+    max-width: 100%;
   }
 }
 
@@ -688,7 +699,7 @@ header {
 }
 
 .header_logo {
-  float: left;
+  float: right;
   width: 50%;
 }
 @media screen and (max-width: 768px) {
@@ -711,7 +722,7 @@ header {
   }
 }
 
-.header_logo-kids {
+.header_logo-future {
   text-align: right;
 }
 
@@ -741,7 +752,7 @@ header {
 }
 
 .about_column {
-  float: left;
+  float: right;
   width: 540px;
 }
 @media screen and (max-width: 768px) {
@@ -842,7 +853,7 @@ header {
 }
 
 .logoApp_exampleTable {
-  float: left;
+  float: right;
   height: 540px;
   margin-bottom: 20px;
   width: 540px;

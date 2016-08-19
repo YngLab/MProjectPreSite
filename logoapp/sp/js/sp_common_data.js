@@ -203,11 +203,14 @@ function sp_window() {
   var sp_tut_previewCanvas = $('.tutorialPreviewCanvas');
   var sp_tut_button = $('.tutorialButtonContainer');
 
+	var sp_comp_mainBlock = $('.completeCenterBlock');
+	var sp_comp_mainCanvas = $('#completeCanvas');
+
   function resizeCanvas(){
     mainSize = sp_mainBlock.width();
     previewSize = sp_previewBlock.width();
     var buttonWidth = sp_button.width()*0.2;
-    var buttonHeight = sp_button.width()*0.15;
+    var buttonHeight = sp_button.width()*0.2;
     sp_mainCanvas.outerWidth(sp_mainBlock.width());
     sp_mainCanvas.outerHeight(sp_mainBlock.width() * 1.0);
     sp_previewCanvas.outerWidth(sp_previewBlock.width());
@@ -275,6 +278,12 @@ function sp_window() {
     document.getElementById("tutorialPlayButton").height = tut_buttonHeight;
     document.getElementById("tutorialCompleteButton").width = tut_buttonWidth;
     document.getElementById("tutorialCompleteButton").height = tut_buttonHeight;
+
+		var comp_mainSize = sp_comp_mainBlock.width();
+		sp_comp_mainCanvas.outerWidth(sp_comp_mainBlock.width());
+		sp_comp_mainCanvas.outerHeight(sp_comp_mainBlock.width() * 1.0);
+		document.getElementsByClassName("completeCenterContainer")[0].style.height = comp_mainSize + 'px';
+		document.getElementsByClassName("completeCenterBlock")[0].style.height = comp_mainSize + 'px';
   }
   resizeCanvas();
   $(window).on('resize', resizeCanvas);

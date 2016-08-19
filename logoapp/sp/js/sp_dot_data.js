@@ -422,7 +422,11 @@ DotAppFramework.prototype.onClickPlayButton = function() {
 DotAppFramework.prototype.onClickCompleteButton = function() {
 	if(this.buttonActive.complete) {
 		var that = this;
-		completeDialog.dialog("open");
+		//completeDialog.dialog("open");
+		document.getElementsByClassName("appContainer")[0].style.display = "none";
+		document.getElementById("completeDialog").style.display = "block";
+
+
 		this.completeViewTime = 0;
 		this.completeViewFrame = 1;
 		this.completeLoopInterval = setInterval(this.completeLoop.bind(this), 33);
@@ -431,10 +435,11 @@ DotAppFramework.prototype.onClickCompleteButton = function() {
 DotAppFramework.prototype.onClickNotCompleteButton = function() {
 	this.drawButton();
 	clearInterval(this.completeLoopInterval	);
-	completeDialog.dialog("close");
+	//completeDialog.dialog("close");
+	document.getElementsByClassName("appContainer")[0].style.display = "block";
+	document.getElementById("completeDialog").style.display = "none";
 };
 DotAppFramework.prototype.onClickUploadButton = function() {
-	return;
 	clearInterval(this.completeLoopInterval	);
 	var encoder = new GIFEncoder();
 	encoder.setRepeat(0);
@@ -469,6 +474,8 @@ DotAppFramework.prototype.onClickUploadButton = function() {
 	//URL.revokeObjectURL(url);
 
 	//download blob
+
+	/*
 	var FileName = "dotanime.gif"
 
 	if (window.navigator.msSaveBlob) {
@@ -482,6 +489,7 @@ DotAppFramework.prototype.onClickUploadButton = function() {
 		a.click();
 		document.body.removeChild(a) //  FireFox specification
 	}
+	*/
 
 	/*
 	//show blob <img>
@@ -496,7 +504,9 @@ DotAppFramework.prototype.onClickUploadButton = function() {
 	};
 	*/
 
-	completeDialog.dialog("close");
+	//completeDialog.dialog("close");
+	//document.getElementsByClassName("appContainer")[0].style.display = "none";
+	//document.getElementById("completeDialog").style.display = "block";
 };
 
 DotAppFramework.prototype.drawMainView = function(isActive) {
