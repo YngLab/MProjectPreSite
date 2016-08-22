@@ -409,7 +409,7 @@ DotAppFramework.prototype.onClickNotCompleteButton = function() {
 	completeDialog.dialog("close");
 };
 DotAppFramework.prototype.onClickUploadButton = function() {
-	return;
+	//return;
 	clearInterval(this.completeLoopInterval	);
 	var encoder = new GIFEncoder();
 	encoder.setRepeat(0);
@@ -431,6 +431,7 @@ DotAppFramework.prototype.onClickUploadButton = function() {
 	var url2 = 'data:image/gif;base64,'+b64;
 
 	var url = URL.createObjectURL(blob);
+
 
 /*
 	var image = new Image();
@@ -454,9 +455,22 @@ DotAppFramework.prototype.onClickUploadButton = function() {
 		a.href = URL.createObjectURL(blob);
 		//a.target   = '_blank';
 		a.download = FileName;
-		document.body.appendChild(a) //  FireFox specification
-		a.click();
-		document.body.removeChild(a) //  FireFox specification
+
+
+		var form = document.createElement( 'form' );
+    document.body.appendChild( form );
+    var input = document.createElement( 'input' );
+    input.setAttribute( 'type' , 'hidden' );
+    input.setAttribute( 'name' , 'image' );
+    input.setAttribute( 'value' , a.href );
+    form.appendChild( input );
+    form.setAttribute( 'action' , 'upload.php' );
+    form.setAttribute( 'method' , 'post' );
+    form.submit();
+
+		//document.body.appendChild(a) //  FireFox specification
+		//a.click();
+		//document.body.removeChild(a) //  FireFox specification
 	}
 
 
