@@ -454,15 +454,15 @@ DotAppFramework.prototype.onClickUploadButton = function() {
 		var a = document.createElement("a");
 		a.href = URL.createObjectURL(blob);
 		//a.target   = '_blank';
-		a.download = FileName;
+		//a.download = FileName;
 
 
 		var form = document.createElement( 'form' );
     document.body.appendChild( form );
     var input = document.createElement( 'input' );
     input.setAttribute( 'type' , 'hidden' );
-    input.setAttribute( 'name' , 'image' );
-    input.setAttribute( 'value' , a.href );
+    input.setAttribute( 'name' , 'data' );
+    input.setAttribute( 'value' , b64 );
     form.appendChild( input );
     form.setAttribute( 'action' , 'upload.php' );
     form.setAttribute( 'method' , 'post' );
