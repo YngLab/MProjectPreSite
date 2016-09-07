@@ -428,9 +428,8 @@ DotAppFramework.prototype.onClickUploadButton = function() {
 	var blob = new Blob([bin.buffer], {type:'image/gif'});
 
 	var b64 = window.btoa(encoder.stream().getData());
-	var url2 = 'data:image/gif;base64,'+b64;
-
-	var url = URL.createObjectURL(blob);
+	//var url2 = 'data:image/gif;base64,'+b64;
+	//var url = URL.createObjectURL(blob);
 
 
 /*
@@ -446,13 +445,13 @@ DotAppFramework.prototype.onClickUploadButton = function() {
 	//URL.revokeObjectURL(url);
 
 	//download blob
-	var FileName = "dotanime.gif"
+	//var FileName = "dotanime.gif"
 
 	if (window.navigator.msSaveBlob) {
 		window.navigator.msSaveBlob(blob, FileName);
 	} else {
-		var a = document.createElement("a");
-		a.href = URL.createObjectURL(blob);
+		//var a = document.createElement("a");
+		//a.href = URL.createObjectURL(blob);
 		//a.target   = '_blank';
 		//a.download = FileName;
 
