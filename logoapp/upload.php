@@ -1,7 +1,13 @@
 <?php
 echo '<pre>';
+print_r($_POST);
+
+$image = $_POST["image"];
+echo "image: " .$image;
+echo '<br>';
 $data = $_POST["data"];
-echo $data;
+echo "data: " .$data;
+
 
 /*
 if($file_get_contents = file_get_contents($_POST["data"])){
@@ -16,7 +22,7 @@ if($file_get_contents = file_get_contents($_POST["data"])){
 //$file_get_contents = file_get_contents($data);
 //echo $file_get_contents;
 
-$contents_split = explode(',', $data);
+$contents_split = explode(',', $image);
 $encoded = $contents_split[count($contents_split)-1];
 $decoded = "";
 $fileName= "test";

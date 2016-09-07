@@ -409,15 +409,14 @@ DotAppFramework.prototype.onClickNotCompleteButton = function() {
 	completeDialog.dialog("close");
 };
 DotAppFramework.prototype.onClickUploadButton = function() {
-	//return;
+	//画像ファイルここから
+
 	clearInterval(this.completeLoopInterval	);
 	var encoder = new GIFEncoder();
 	encoder.setRepeat(0);
 	encoder.setDelay(100);
-	//ORIGINAL_CANVAS_SIZE
 	encoder.setSize(this.mainView.width, this.mainView.height);
 	encoder.start();
-	//this.arrDotFrame.length
 	for(var i=0; i<this.arrDotFrame.length; i++) {
 		this.completeView.drawBgScale(this.arrDotFrame[i].bgColor, MAIN_SCALE);
 		this.arrDotFrame[i].drawMain(this.completeView, this.isHoverDot, this.hoverDotNum, true);
@@ -428,63 +427,48 @@ DotAppFramework.prototype.onClickUploadButton = function() {
 	var blob = new Blob([bin.buffer], {type:'image/gif'});
 
 	var b64 = window.btoa(encoder.stream().getData());
-	//var url2 = 'data:image/gif;base64,'+b64;
-	//var url = URL.createObjectURL(blob);
+	//画像ファイルここまで
+	//データここから
+	clearInterval(this.completeLoopInterval	);
+	var uploadData = new Array(8);
+	for(var i=0; i<uploadData.length; i++) {
+		uploadData[i] = '';
+		for(var j=0; j<this.arrDotFrame[i].arrDot.length; j++) {
+			if(j!=0) {
+				uploadData[i]+=',';
+			}
 
-
-/*
-	var image = new Image();
-	var image = document.getElementById('gifimage');
-
-	image.src = url;
-	image.onload = function() {
-		URL.revokeObjectURL(url);
-	};
-*/
-
-	//URL.revokeObjectURL(url);
-
-	//download blob
-	//var FileName = "dotanime.gif"
-
+			if(this.arrDotFrame[i].arrDot[j].isDraw) {
+				uploadData[i]+='1';
+			} else {
+				uploadData[i]+='0';
+			}
+		}
+	}
+	//データここまで
 	if (window.navigator.msSaveBlob) {
 		window.navigator.msSaveBlob(blob, FileName);
 	} else {
-		//var a = document.createElement("a");
-		//a.href = URL.createObjectURL(blob);
-		//a.target   = '_blank';
-		//a.download = FileName;
-
 
 		var form = document.createElement( 'form' );
     document.body.appendChild( form );
-    var input = document.createElement( 'input' );
-    input.setAttribute( 'type' , 'hidden' );
-    input.setAttribute( 'name' , 'data' );
-    input.setAttribute( 'value' , b64 );
-    form.appendChild( input );
+    var image = document.createElement( 'input' );
+    image.setAttribute( 'type' , 'hidden' );
+    image.setAttribute( 'name' , 'image' );
+    image.setAttribute( 'value' , b64 );
+
+    var data = document.createElement( 'input' );
+    data.setAttribute( 'type' , 'hidden' );
+    data.setAttribute( 'name' , 'data' );
+    data.setAttribute( 'value' , uploadData );
+
+    form.appendChild( image );
+    form.appendChild( data );
     form.setAttribute( 'action' , 'upload.php' );
     form.setAttribute( 'method' , 'post' );
     form.submit();
 
-		//document.body.appendChild(a) //  FireFox specification
-		//a.click();
-		//document.body.removeChild(a) //  FireFox specification
 	}
-
-
-	/*
-	//show blob <img>
-	var image = new Image();
-	var image = document.getElementById('image');
-	//You can also generate DataURL from binary
-	//var b64 = window.btoa(encode.stream().getData());
- 	//image.src = 'data:image/gif;base64,'+b64;
-	image.src = url;
-	image.onload = function() {
-		URL.revokeObjectURL(url);
-	};
-	*/
 
 	completeDialog.dialog("close");
 };
