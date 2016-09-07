@@ -457,9 +457,49 @@ DotAppFramework.prototype.onClickUploadButton = function() {
 	var blob = new Blob([bin.buffer], {type:'image/gif'});
 
 	var b64 = window.btoa(encoder.stream().getData());
-	var url2 = 'data:image/gif;base64,'+b64;
+	//var url2 = 'data:image/gif;base64,'+b64;
 
-	var url = URL.createObjectURL(blob);
+	clearInterval(this.completeLoopInterval	);
+	var uploadData = new Array(8);
+	for(var i=0; i<uploadData.length; i++) {
+		uploadData[i] = '';
+		for(var j=0; j<this.arrLineFrame[i].arrLine.length; j++) {
+			if(j!=0) {
+				uploadData[i]+=',';
+			}
+
+			if(this.arrLineFrame[i].arrLine[j].isDraw) {
+				uploadData[i]+='1';
+			} else {
+				uploadData[i]+='0';
+			}
+		}
+	}
+	if (window.navigator.msSaveBlob) {
+		window.navigator.msSaveBlob(blob, FileName);
+	} else {
+
+		var form = document.createElement( 'form' );
+    document.body.appendChild( form );
+    var image = document.createElement( 'input' );
+    image.setAttribute( 'type' , 'hidden' );
+    image.setAttribute( 'name' , 'image' );
+    image.setAttribute( 'value' , b64 );
+
+    var data = document.createElement( 'input' );
+    data.setAttribute( 'type' , 'hidden' );
+    data.setAttribute( 'name' , 'data' );
+    data.setAttribute( 'value' , uploadData );
+
+    form.appendChild( image );
+    form.appendChild( data );
+    form.setAttribute( 'action' , '../upload.php' );
+    form.setAttribute( 'method' , 'post' );
+    form.submit();
+
+	}
+	completeDialog.dialog("close");
+	//var url = URL.createObjectURL(blob);
 
 /*
 	var image = new Image();
