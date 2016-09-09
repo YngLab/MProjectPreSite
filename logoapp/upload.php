@@ -1,5 +1,5 @@
 <?php
-require('set-db.php');
+require('set_db.php');
 
 echo '<pre>';
 print_r($_POST);
@@ -9,7 +9,19 @@ echo "image: " .$image;
 echo '<br>';
 $data = $_POST["data"];
 echo "data: " .$data;
+echo '<br><br>';
 
+if(isset($data)){//imageにデータが入っていることを確認
+  //データベースにデータを登録
+  if(mysqli_query($link, "INSERT INTO `test` (`ID`, `date`, `imgData`) VALUES (NULL, CURRENT_TIMESTAMP, $data)")){
+    //最新idを取得
+    $id = mysqli_fetch_array(mysqli_query($link, "SELECT * FROM `Images` ORDER BY `id` DESC"))['id'];
+  }else{
+    echo "database error";
+  }
+}else{
+  echo "file select error";
+}
 
 /*
 if($file_get_contents = file_get_contents($_POST["data"])){
@@ -27,7 +39,7 @@ if($file_get_contents = file_get_contents($_POST["data"])){
 $contents_split = explode(',', $image);
 $encoded = $contents_split[count($contents_split)-1];
 $decoded = "";
-$fileName= "test";
+$fileName= $id;
 
 for ($i=0; $i < ceil(strlen($encoded)/256); $i++) {
   $decoded = $decoded . base64_decode(substr($encoded,$i*256,256));
