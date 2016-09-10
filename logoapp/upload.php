@@ -11,6 +11,9 @@ echo '<br>';
 $data = $_POST["data"];
 echo "data: " .$data;
 echo '<br><br>';
+$type = $_POST["type"];
+echo "type: ".$type;
+echo '<br><br>';
 
 if(isset($data)){//imageにデータが入っていることを確認
   //データベースにデータを登録
@@ -48,7 +51,7 @@ for ($i=0; $i < ceil(strlen($encoded)/256); $i++) {
 }
 
 //echo $decoded;
-chmod("upload/", 0777);
-$fp = fopen("upload/".$fileName.".gif", 'w');
+//chmod("upload/", 0777);
+$fp = fopen("upload/".$type."/".$fileName.".gif", 'w');
 fwrite($fp, $decoded);
 fclose($fp);
