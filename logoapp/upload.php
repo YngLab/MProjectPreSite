@@ -1,5 +1,6 @@
 <?php
 require('set_db.php');
+$id = "NuLl";
 
 echo '<pre>';
 print_r($_POST);
@@ -13,9 +14,10 @@ echo '<br><br>';
 
 if(isset($data)){//imageにデータが入っていることを確認
   //データベースにデータを登録
-  if(mysqli_query($link, "INSERT INTO `test` (`ID`, `date`, `imgData`) VALUES (NULL, CURRENT_TIMESTAMP, $data)")){
+  if(mysqli_query($link, "INSERT INTO `test` (`ID`, `date`, `imgData`) VALUES (NULL, CURRENT_TIMESTAMP, '$data')") == TRUE){
     //最新idを取得
-    $id = mysqli_fetch_array(mysqli_query($link, "SELECT * FROM `Images` ORDER BY `id` DESC"))['id'];
+    $id = mysqli_fetch_array(mysqli_query($link, "SELECT * FROM `test` ORDER BY `ID` DESC"))['ID'];
+    echo "id: $id";
   }else{
     echo "database error";
   }
@@ -46,7 +48,7 @@ for ($i=0; $i < ceil(strlen($encoded)/256); $i++) {
 }
 
 //echo $decoded;
-
+chmod("upload/", 0777);
 $fp = fopen("upload/".$fileName.".gif", 'w');
 fwrite($fp, $decoded);
 fclose($fp);
