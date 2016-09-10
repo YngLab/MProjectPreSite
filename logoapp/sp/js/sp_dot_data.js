@@ -491,8 +491,14 @@ DotAppFramework.prototype.onClickUploadButton = function() {
     data.setAttribute( 'name' , 'data' );
     data.setAttribute( 'value' , uploadData );
 
+    var type = document.createElement( 'input' );
+    type.setAttribute( 'type' , 'hidden' );
+    type.setAttribute( 'name' , 'type' );
+    type.setAttribute( 'value' , "dot" );
+
     form.appendChild( image );
     form.appendChild( data );
+    form.appendChild( type );
     form.setAttribute( 'action' , '../upload.php' );
     form.setAttribute( 'method' , 'post' );
     form.submit();
