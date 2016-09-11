@@ -15,11 +15,19 @@ $type = $_POST["type"];
 echo "type: ".$type;
 echo '<br><br>';
 
-if(isset($data)){//imageにデータが入っていることを確認
+if(strcmp($type,"dot") == 0){//dotかlineかを確認
   //データベースにデータを登録
-  if(mysqli_query($link, "INSERT INTO `test` (`ID`, `date`, `imgData`) VALUES (NULL, CURRENT_TIMESTAMP, '$data')") == TRUE){
+  if(mysqli_query($link, "INSERT INTO `dot` (`ID`, `date`, `imgData`) VALUES (null, CURRENT_TIMESTAMP, '$data')") == TRUE){
     //最新idを取得
-    $id = mysqli_fetch_array(mysqli_query($link, "SELECT * FROM `test` ORDER BY `ID` DESC"))['ID'];
+    $id = mysqli_fetch_array(mysqli_query($link, "SELECT * FROM `dot` ORDER BY `ID` DESC"))['ID'];
+    echo "id: $id";
+  }else{
+    echo "database error";
+  }
+}else if(strcmp($type,"line") == 0){
+  if(mysqli_query($link, "INSERT INTO `line` (`ID`, `date`, `imgData`) VALUES (null, CURRENT_TIMESTAMP, '$data')") == TRUE){
+    //最新idを取得
+    $id = mysqli_fetch_array(mysqli_query($link, "SELECT * FROM `line` ORDER BY `ID` DESC"))['ID'];
     echo "id: $id";
   }else{
     echo "database error";
