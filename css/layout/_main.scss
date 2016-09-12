@@ -245,6 +245,29 @@ header{
   }
 }
 
+.logoApp_send{
+  padding: 25px;
+  h2{
+    border-bottom: none;
+  }
+  .guide_logoApp{
+    width: 600px;
+    margin: 50px auto 0 auto;
+    @include clearfix;
+    .guide_logoApp_future{
+      width: auto;
+      float: left;
+    }
+    .guide_logoApp_kids{
+      width: auto;
+      float: right;
+    }
+    img{
+      width: 200px;
+    }
+  }
+}
+
 .movie_youtube{
   height: $pc__w / 16 * 9;
   width: $pc__w;
