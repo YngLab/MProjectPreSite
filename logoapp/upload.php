@@ -2,38 +2,38 @@
 require('set_db.php');
 $id = "NuLl";
 
-echo '<pre>';
+//echo '<pre>';
 print_r($_POST);
 
 $image = $_POST["image"];
-echo "image: " .$image;
-echo '<br>';
+//echo "image: " .$image;
+//echo '<br>';
 $data = $_POST["data"];
-echo "data: " .$data;
-echo '<br><br>';
+//echo "data: " .$data;
+//echo '<br><br>';
 $type = $_POST["type"];
-echo "type: ".$type;
-echo '<br><br>';
+//echo "type: ".$type;
+//echo '<br><br>';
 
 if(strcmp($type,"dot") == 0){//dotかlineかを確認
   //データベースにデータを登録
   if(mysqli_query($link, "INSERT INTO `dot` (`ID`, `date`, `imgData`) VALUES (null, CURRENT_TIMESTAMP, '$data')") == TRUE){
     //最新idを取得
     $id = mysqli_fetch_array(mysqli_query($link, "SELECT * FROM `dot` ORDER BY `ID` DESC"))['ID'];
-    echo "id: $id";
+    //echo "id: $id";
   }else{
-    echo "database error";
+    //echo "database error";
   }
 }else if(strcmp($type,"line") == 0){
   if(mysqli_query($link, "INSERT INTO `line` (`ID`, `date`, `imgData`) VALUES (null, CURRENT_TIMESTAMP, '$data')") == TRUE){
     //最新idを取得
     $id = mysqli_fetch_array(mysqli_query($link, "SELECT * FROM `line` ORDER BY `ID` DESC"))['ID'];
-    echo "id: $id";
+    //echo "id: $id";
   }else{
-    echo "database error";
+    //echo "database error";
   }
 }else{
-  echo "file select error";
+  //echo "file select error";
 }
 
 /*
