@@ -620,6 +620,70 @@ header {
   }
 }
 
+.selectApp {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .selectApp .header_logo {
+    height: 50%;
+    position: absolute;
+  }
+  .selectApp .header_logo-future {
+    bottom: 0;
+  }
+  .selectApp .header_logoImage {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 100%;
+    width: auto;
+    min-width: 100%;
+  }
+}
+@media screen and (min-width: 769px) {
+  .selectApp {
+    position: absolute;
+    height: 100%;
+    min-width: 100% !important;
+    width: 100%;
+  }
+  .selectApp:after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+  .selectApp .header_logo {
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    color: white;
+    position: absolute;
+  }
+  .selectApp .header_logo-kids {
+    left: 0;
+  }
+  .selectApp .header_logo-future {
+    right: 0;
+  }
+  .selectApp .header_logoImage {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: auto;
+    max-height: 100%;
+    width: auto;
+    max-width: 100%;
+  }
+}
+
 #logos {
   min-width: 1080px;
 }
@@ -635,7 +699,7 @@ header {
 }
 
 .header_logo {
-  float: left;
+  float: right;
   width: 50%;
 }
 @media screen and (max-width: 768px) {
@@ -658,7 +722,7 @@ header {
   }
 }
 
-.header_logo-kids {
+.header_logo-future {
   text-align: right;
 }
 
@@ -688,7 +752,7 @@ header {
 }
 
 .about_column {
-  float: left;
+  float: right;
   width: 540px;
 }
 @media screen and (max-width: 768px) {
@@ -789,7 +853,7 @@ header {
 }
 
 .logoApp_exampleTable {
-  float: left;
+  float: right;
   height: 540px;
   margin-bottom: 20px;
   width: 540px;
@@ -1132,6 +1196,18 @@ header {
     min-width: 100%;
   }
 }
+#contact h2 {
+  border-bottom: none;
+  font-weight: 200;
+  width: auto;
+}
+#contact a {
+  color: #fdfdfd;
+}
+#contact p {
+  font-size: 16.8px;
+  text-align: center;
+}
 
 .contact_inner {
   margin: 5px auto;
@@ -1243,7 +1319,7 @@ footer {
     display: block;
     height: auto;
     margin: 2em auto;
-    width: 57%;
+    height: 51px;
     position: static;
     bottom: 0;
     right: 0;
@@ -1411,6 +1487,44 @@ footer {
   }
 }
 
+@media screen and (min-width: 769px) {
+  .contact-confirm {
+    position: absolute;
+    height: 100%;
+  }
+}
+
+.contact_button-confirm {
+  width: 45%;
+}
+@media screen and (max-width: 768px) {
+  .contact_button-confirm {
+    display: inline-block;
+  }
+}
+
+.contact_button-fix {
+  margin-right: 7%;
+}
+
 .contact-spamBlock {
   display: none;
+}
+
+.footer-confirm {
+  padding: 20px;
+}
+@media screen and (min-width: 769px) {
+  .footer-confirm {
+    position: absolute;
+    bottom: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer-confirm {
+    padding: 10px;
+  }
+}
+.footer-confirm .footer_inner {
+  width: auto;
 }
