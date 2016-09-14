@@ -62,9 +62,15 @@ for ($i=0; $i < ceil(strlen($encoded)/256); $i++) {
 
 //echo $decoded;
 //chmod("upload/", 0777);
-$fp = fopen("upload/".$type."/".$fileName.".gif", 'w');
-fwrite($fp, $decoded);
-fclose($fp);
+while(true){
+  $fp = fopen("upload/".$type."/".$fileName.".gif", 'w');
+  if(fwrite($fp, $decoded) == false){
+    continue;
+  }else{
+  fclose($fp);
+  break;
+  }
+}
 
 header("location: send.php");
 exit();
