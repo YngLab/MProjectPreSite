@@ -1,9 +1,11 @@
 <?php
+echo "処理中です…<br>";
+
 require('set_db.php');
 $id = "NuLl";
 
 //echo '<pre>';
-print_r($_POST);
+//print_r($_POST);
 
 $image = $_POST["image"];
 //echo "image: " .$image;
@@ -63,3 +65,6 @@ for ($i=0; $i < ceil(strlen($encoded)/256); $i++) {
 $fp = fopen("upload/".$type."/".$fileName.".gif", 'w');
 fwrite($fp, $decoded);
 fclose($fp);
+
+header("location: send.php");
+exit();
