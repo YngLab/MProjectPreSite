@@ -1,3 +1,9 @@
+<?php
+require('set_db.php');
+$rand_dot =  mysqli_fetch_array(mysqli_query($link, "SELECT * FROM `dot` ORDER BY RAND()"));//ランダム順用SQL
+$rand_line = mysqli_fetch_array(mysqli_query($link, "SELECT * FROM `line` ORDER BY RAND()"));//ランダム順用SQL
+
+$content =<<<HTML
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -5,8 +11,8 @@
 <link rel="stylesheet" href="../css/style.css">
 <title>はこだてみらい館・はこだてキッズプラザ 告知サイト</title>
 
+<h2>送信が完了しました。</h2>
 <div class="logoApp_send">
-  <h2>送信が完了しました。</h2>
   <p>送信していただいたうごくロゴは<br>
     施設オープン時のイベントでの使用や<br>
     ウェブサイト上での公開を予定しています。<br>
@@ -16,14 +22,14 @@
   <div class = "guide_logoApp">
     <a href = "../logoapp/line_index.html">
       <div class = "guide_logoApp_future">
-        <img src = "../img/access_jr.png" alt = "はこだてみらい館のうごくロゴをつくる">
+        <img src = "upload/line/$rand_line[ID].gif" alt = "はこだてみらい館のうごくロゴをつくる">
         <p>はこだてみらい館の<br>
           うごくロゴをつくる</p>
       </div>
     </a>
     <a href = "../logoapp/dot_index.html">
       <div class = "guide_logoApp_kids">
-        <img src = "../img/access_jr.png"　alt = "はこだてキッズプラザのうごくロゴをつくる">
+        <img src = "upload/dot/$rand_dot[ID].gif" alt = "はこだてキッズプラザのうごくロゴをつくる">
         <p>はこだてキッズプラザの<br>
           うごくロゴをつくる</p>
       </div>
@@ -43,3 +49,7 @@
     <p class="footer_text-copyright">©2016 Hakodate Mirai Project</p>
   </div>
 </footer>
+HTML;
+
+echo $content;
+exit();
