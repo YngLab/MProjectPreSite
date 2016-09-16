@@ -828,7 +828,7 @@ DotTutorial.prototype.onClickPageButton1 = function() {
 		this.renewImages();
 		this.renewButton(false, false, false, false, false);
 		this.mainView.drawBgScale(this.arrDotFrame[0].bgColor, MAIN_SCALE);
-		document.getElementById('tutorialText').innerHTML='ロゴを使って、アニメーションが作れます。';
+		document.getElementById('tutorialText').innerHTML='作り方：ロゴを使って、アニメーションが作れます。';
 		document.getElementById('tutorialPointer').style.display = 'none';
 		this.time = 0;
 		this.currentFrame = 1;
@@ -854,7 +854,7 @@ DotTutorial.prototype.onClickPageButton2 = function() {
 		this.renewImages();
 		this.renewButton(false, false, false, false, false);
 		this.mainView.drawBgScale(this.arrDotFrame[0].bgColor, MAIN_SCALE);
-		document.getElementById('tutorialText').innerHTML='ロゴのパーツをクリックして色を付けましょう。';
+		document.getElementById('tutorialText').innerHTML='作り方：ロゴのパーツをクリックして色を付けましょう。';
 		document.getElementById('tutorialPointer').style.display = 'block';
 		document.getElementById('tutorialPointer').style.top = '290px';
 		document.getElementById('tutorialPointer').style.left = '485px';
@@ -882,7 +882,7 @@ DotTutorial.prototype.onClickPageButton3 = function() {
 		this.renewImages();
 		this.renewButton(false, false, false, false, false);
 		this.mainView.drawBgScale(this.arrDotFrame[0].bgColor, MAIN_SCALE);
-		document.getElementById('tutorialText').innerHTML='1 コマ目が完成したら、次のコマを選択してください。';
+		document.getElementById('tutorialText').innerHTML='作り方：1 コマ目が完成したら次のコマを選択してください。';
 		document.getElementById('tutorialPointer').style.display = 'block';
 		this.time = 0;
 		this.currentFrame = 1;
@@ -908,7 +908,7 @@ DotTutorial.prototype.onClickPageButton4 = function() {
 		this.renewImages();
 		this.renewButton(true, true, true, true, false);
 		this.mainView.drawBgScale(this.arrDotFrame[0].bgColor, MAIN_SCALE);
-		document.getElementById('tutorialText').innerHTML='右側は便利な機能があるので使ってみてください。';
+		document.getElementById('tutorialText').innerHTML='作り方：右側は便利な機能があるので使ってみてください。';
 		document.getElementById('tutorialPointer').style.display = 'block';
 		document.getElementById('tutorialPointer').style.top = '245px';
 		document.getElementById('tutorialPointer').style.left = '700px';
@@ -936,7 +936,7 @@ DotTutorial.prototype.onClickPageButton5 = function() {
 		this.renewImages();
 		this.renewButton(true, true, true, true, true);
 		this.mainView.drawBgScale(this.arrDotFrame[0].bgColor, MAIN_SCALE);
-		document.getElementById('tutorialText').innerHTML='8 コマできたら完成です。';
+		document.getElementById('tutorialText').innerHTML='作り方：8 コマできたら完成です。';
 		document.getElementById('tutorialPointer').style.display = 'block';
 		document.getElementById('tutorialPointer').style.top = '540px';
 		document.getElementById('tutorialPointer').style.left = '700px';

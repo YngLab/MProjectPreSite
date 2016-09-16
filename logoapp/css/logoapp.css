@@ -13,7 +13,9 @@ html {
   font-family: 'Noto Sans Japanese', sans-serif;
   color: #666;
 }
-
+.ui-dialog .ui-dialog-content {
+  padding: .5em 2em;
+}
 .tutorialMainBlock,
 .tutorialPreviewCanvas,
 .mainBlock,
@@ -32,7 +34,8 @@ html {
   min-height: 550px;
 }
 .tutorialContainer {
-  width: 840px;
+  width: auto;
+  /* width: 840px; */
   height: 540px;
 }
 .tutorialContainer a {
@@ -87,14 +90,14 @@ html {
 }
 .tutorialLeftBlock {
   width: 100px;
-  height: 50px;
+  height: 44px;
   position: absolute;
   bottom: 0;
   margin: auto;
 }
 #tutorialBackButton {
   height: 44px;
-  line-height: 44px;
+  line-height: 48px;
   font-size: 20px;
   letter-spacing: 10px;
 }
@@ -140,16 +143,16 @@ html {
   position: relative;
 }
 #tutorialButtonArea {
-  width: 60px; height: 450px;
+  width: 44px; height: 450px;
   position: absolute;
   top: 0;right: 0;bottom: 0;left: 0;
   margin: auto;
 }
 .tutorialButtonBlockFirst {
-  width: 60px; height: 60px;margin: auto; margin-top: 1px;
+  width: 44px; height: 60px;margin: auto; margin-top: 1px;
 }
 .tutorialButtonBlock {
-  width: 60px; height: 60px;margin: auto; margin-top: 37px;
+  width: 44px; height: 60px;margin: auto; margin-top: 37px;
 }
 #tutorialPointer {
   position: absolute;
@@ -187,14 +190,14 @@ html {
 }
 .tutorialRightBottomBlock {
   width: 100px;
-  height: 50px;
+  height: 44px;
   position: absolute;
   bottom: 0;
   margin: auto;
 }
 #tutorialNextButton {
   height: 44px;
-  line-height: 44px;
+  line-height: 48px;
   font-size: 20px;
   letter-spacing: 10px;
 }
