@@ -178,7 +178,7 @@ $line = mysqli_query($link, "SELECT * FROM `line` ORDER BY `id` DESC");
             while($i < 3){
               $num = mysqli_fetch_array($line)[ID];
               if($i == 1){
-                echo "<td colspan=\"2\" rowspan=\"2\"><img src=\"logoapp/work/line/$num.gif\" alt=\"作品例\" class=\"logoApp_exampleImage\"></td>";
+                echo "<td colspan=\"2\" rowspan=\"2\"><img src=\"logoapp/upload/line/$num.gif\" alt=\"作品例\" class=\"logoApp_exampleImage\"></td>";
               }else{
                 echo "<td><img src=\"logoapp/upload/line/$num.gif\" alt=\"作品例\" class=\"logoApp_exampleImage\" style=\"cursor: pointer;\"></td>";
               }
