@@ -163,25 +163,48 @@ $line = mysqli_query($link, "SELECT * FROM `line` ORDER BY `id` DESC");
     <div class="logoApp_future">
       <table class="logoApp_exampleTable">
         <tr>
-          <td><img src="logoapp/work/line/1.gif" alt="作品例" class="logoApp_exampleImage"></td>
-          <td><img src="logoapp/work/line/2.gif" alt="作品例" class="logoApp_exampleImage"></td>
-          <td><img src="logoapp/work/line/3.gif" alt="作品例" class="logoApp_exampleImage"></td>
-          <td><img src="logoapp/work/line/4.gif" alt="作品例" class="logoApp_exampleImage"></td>
+         <?
+            $i = 0;
+            while($i < 4){
+              $num = mysqli_fetch_array($line)[ID];
+              echo "<td><img src=\"logoapp/upload/line/$num.gif\" alt=\"作品例\" class=\"logoApp_exampleImage\" style=\"cursor: pointer;\"></td>";
+              $i++;
+            }
+          ?>
         </tr>
         <tr class="g-pcOnly">
-          <td><img src="logoapp/work/line/5.gif" alt="作品例" class="logoApp_exampleImage"></td>
-          <td colspan="2" rowspan="2"><img src="logoapp/work/line/6.gif" alt="作品例" class="logoApp_exampleImage"></td>
-          <td><img src="logoapp/work/line/7.gif" alt="作品例" class="logoApp_exampleImage"></td>
+          <?
+            $i = 0;
+            while($i < 3){
+              $num = mysqli_fetch_array($line)[ID];
+              if($i == 1){
+                echo "<td colspan=\"2\" rowspan=\"2\"><img src=\"logoapp/work/line/$num.gif\" alt=\"作品例\" class=\"logoApp_exampleImage\"></td>";
+              }else{
+                echo "<td><img src=\"logoapp/upload/line/$num.gif\" alt=\"作品例\" class=\"logoApp_exampleImage\" style=\"cursor: pointer;\"></td>";
+              }
+              $i++;
+            }
+          ?>
         </tr>
         <tr class="g-pcOnly">
-          <td><img src="logoapp/work/line/8.gif" alt="作品例" class="logoApp_exampleImage"></td>
-          <td><img src="logoapp/work/line/9.gif" alt="作品例" class="logoApp_exampleImage"></td>
+          <?
+            $i = 0;
+            while($i < 2){
+              $num = mysqli_fetch_array($line)[ID];
+              echo "<td><img src=\"logoapp/upload/line/$num.gif\" alt=\"作品例\" class=\"logoApp_exampleImage\" style=\"cursor: pointer;\"></td>";
+              $i++;
+            }
+          ?>
         </tr>
         <tr class="g-pcOnly">
-          <td><img src="logoapp/work/line/10.gif" alt="作品例" class="logoApp_exampleImage"></td>
-          <td><img src="logoapp/work/line/11.gif" alt="作品例" class="logoApp_exampleImage"></td>
-          <td><img src="logoapp/work/line/12.gif" alt="作品例" class="logoApp_exampleImage"></td>
-          <td><img src="logoapp/work/line/13.gif" alt="作品例" class="logoApp_exampleImage"></td>
+          <?
+            $i = 0;
+            while($i < 4){
+              $num = mysqli_fetch_array($line)[ID];
+              echo "<td><img src=\"logoapp/upload/line/$num.gif\" alt=\"作品例\" class=\"logoApp_exampleImage\" style=\"cursor: pointer;\"></td>";
+              $i++;
+            }
+          ?>
         </tr>
       </table>
     </div>
