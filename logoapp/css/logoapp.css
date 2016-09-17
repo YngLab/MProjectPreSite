@@ -53,7 +53,7 @@ html {
 }
 #tutorialText {
   font-size: 24px;
-  margin: 0 0 0 20px;
+  margin: 0;
 }
 .tutorialSkipContainer {
   width: 120px;
@@ -97,7 +97,7 @@ html {
 }
 #tutorialBackButton {
   height: 44px;
-  line-height: 48px;
+  line-height: 64px;
   font-size: 20px;
   letter-spacing: 10px;
 }
@@ -197,7 +197,7 @@ html {
 }
 #tutorialNextButton {
   height: 44px;
-  line-height: 48px;
+  line-height: 64px;
   font-size: 20px;
   letter-spacing: 10px;
 }
