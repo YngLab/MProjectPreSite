@@ -904,6 +904,33 @@ header {
   color: #fdfdfd;
 }
 
+.logoApp_send {
+  padding: 25px;
+}
+.logoApp_send h2 {
+  border-bottom: none;
+}
+.logoApp_send .guide_logoApp {
+  width: 600px;
+  margin: 50px auto 0 auto;
+}
+.logoApp_send .guide_logoApp:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.logoApp_send .guide_logoApp .guide_logoApp_future {
+  width: auto;
+  float: left;
+}
+.logoApp_send .guide_logoApp .guide_logoApp_kids {
+  width: auto;
+  float: right;
+}
+.logoApp_send .guide_logoApp img {
+  width: 200px;
+}
+
 .movie_youtube {
   height: 607.5px;
   width: 1080px;
@@ -1459,6 +1486,13 @@ footer {
 .info_table-future {
   color: #F39800;
   font-size: 22px;
+}
+
+.logoApp_send {
+  text-align: center;
+}
+.logoApp_send a {
+  color: #020202;
 }
 
 .contact_inputForm {

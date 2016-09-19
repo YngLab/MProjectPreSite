@@ -97,6 +97,13 @@
   font-size: $info-head__fontSize;
 }
 
+.logoApp_send{
+  text-align: center;
+  a {
+    color: $g__fontColor;
+  }
+}
+
 .contact_inputForm{
   background-color: $g__bgc;
   border-radius: 3px;
