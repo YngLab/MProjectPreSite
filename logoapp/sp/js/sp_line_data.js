@@ -586,7 +586,7 @@ LineAppFramework.prototype.onClickUploadButton = function() {
     form.appendChild( image );
     form.appendChild( data );
     form.appendChild( type );
-    form.setAttribute( 'action' , '../upload.php' );
+    form.setAttribute( 'action' , '../../upload.php' );
     form.setAttribute( 'method' , 'post' );
     form.submit();
 
