@@ -2,6 +2,7 @@
 require('logoapp/set_db.php');
 $dot = mysqli_query($link, "SELECT * FROM `dot` ORDER BY `id` DESC");
 $line = mysqli_query($link, "SELECT * FROM `line` ORDER BY `id` DESC");
+$temp = 0;
 ?>
 
 <!DOCTYPE html>
@@ -118,8 +119,15 @@ $line = mysqli_query($link, "SELECT * FROM `line` ORDER BY `id` DESC");
           <?
             $i = 0;
             while($i < 4){
-              $num = mysqli_fetch_array($dot)[ID];
-              echo "<td><img src=\"logoapp/upload/dot/$num.gif\" alt=\"作品例\" class=\"logoApp_exampleImage\" style=\"cursor: pointer;\"></td>";
+              $num = mysqli_fetch_array($dot)[ID] - $temp;
+              $name ="\"logoapp/upload/dot/$num.gif\"";
+              if($num < 1){
+                $num = 1;
+              }
+              if(!file_exists("logoapp/upload/line/$num.gif")){
+                continue;
+              }
+              echo "<td><img src=$name alt=\"作品例\" class=\"logoApp_exampleImage\" style=\"cursor: pointer;\"></td>";
               $i++;
             }
           ?>
@@ -128,11 +136,18 @@ $line = mysqli_query($link, "SELECT * FROM `line` ORDER BY `id` DESC");
           <?
             $i = 0;
             while($i < 3){
-              $num = mysqli_fetch_array($dot)[ID];
+              $num = mysqli_fetch_array($dot)[ID] - $temp;
+              $name ="\"logoapp/upload/dot/$num.gif\"";
+              if($num < 1){
+                $num = 1;
+              }
+              if(!file_exists("logoapp/upload/line/$num.gif")){
+                continue;
+              }
               if($i == 1){
-                echo "<td colspan=\"2\" rowspan=\"2\"><img src=\"logoapp/work/dot/$num.gif\" alt=\"作品例\" class=\"logoApp_exampleImage\"></td>";
+                echo "<td colspan=\"2\" rowspan=\"2\"><img src=$name alt=\"作品例\" class=\"logoApp_exampleImage\"></td>";
               }else{
-                echo "<td><img src=\"logoapp/upload/dot/$num.gif\" alt=\"作品例\" class=\"logoApp_exampleImage\" style=\"cursor: pointer;\"></td>";
+                echo "<td><img src=$name alt=\"作品例\" class=\"logoApp_exampleImage\" style=\"cursor: pointer;\"></td>";
               }
               $i++;
             }
@@ -142,8 +157,15 @@ $line = mysqli_query($link, "SELECT * FROM `line` ORDER BY `id` DESC");
           <?
             $i = 0;
             while($i < 2){
-              $num = mysqli_fetch_array($dot)[ID];
-              echo "<td><img src=\"logoapp/upload/dot/$num.gif\" alt=\"作品例\" class=\"logoApp_exampleImage\" style=\"cursor: pointer;\"></td>";
+              $num = mysqli_fetch_array($dot)[ID] - $temp;
+              $name ="\"logoapp/upload/dot/$num.gif\"";
+              if($num < 1){
+                $num = 1;
+              }
+              if(!file_exists("logoapp/upload/line/$num.gif")){
+                continue;
+              }
+              echo "<td><img src=$name alt=\"作品例\" class=\"logoApp_exampleImage\" style=\"cursor: pointer;\"></td>";
               $i++;
             }
           ?>
@@ -152,8 +174,15 @@ $line = mysqli_query($link, "SELECT * FROM `line` ORDER BY `id` DESC");
           <?
             $i = 0;
             while($i < 4){
-              $num = mysqli_fetch_array($dot)[ID];
-              echo "<td><img src=\"logoapp/upload/dot/$num.gif\" alt=\"作品例\" class=\"logoApp_exampleImage\" style=\"cursor: pointer;\"></td>";
+              $num = mysqli_fetch_array($dot)[ID] - $temp;
+              $name ="\"logoapp/upload/dot/$num.gif\"";
+              if($num < 1){
+                $num = 1;
+              }
+              if(!file_exists("logoapp/upload/line/$num.gif")){
+                continue;
+              }
+              echo "<td><img src=$name alt=\"作品例\" class=\"logoApp_exampleImage\" style=\"cursor: pointer;\"></td>";
               $i++;
             }
           ?>
@@ -165,9 +194,17 @@ $line = mysqli_query($link, "SELECT * FROM `line` ORDER BY `id` DESC");
         <tr>
          <?
             $i = 0;
+            $temp = 0;
             while($i < 4){
               $num = mysqli_fetch_array($line)[ID];
-              echo "<td><img src=\"logoapp/upload/line/$num.gif\" alt=\"作品例\" class=\"logoApp_exampleImage\" style=\"cursor: pointer;\"></td>";
+              if($num < 1){
+                $num = 1;
+              }
+              $name = "\"logoapp/upload/line/$num.gif\"";
+              if(!file_exists("logoapp/upload/line/$num.gif")){
+                continue;
+              }
+              echo "<td><img src=$name alt=\"作品例\" class=\"logoApp_exampleImage\" style=\"cursor: pointer;\"></td>";
               $i++;
             }
           ?>
@@ -177,10 +214,17 @@ $line = mysqli_query($link, "SELECT * FROM `line` ORDER BY `id` DESC");
             $i = 0;
             while($i < 3){
               $num = mysqli_fetch_array($line)[ID];
+              if($num < 1){
+                $num = 1;
+              }
+              $name = "\"logoapp/upload/line/$num.gif\"";
+              if(!file_exists("logoapp/upload/line/$num.gif")){
+                continue;
+              }
               if($i == 1){
-                echo "<td colspan=\"2\" rowspan=\"2\"><img src=\"logoapp/upload/line/$num.gif\" alt=\"作品例\" class=\"logoApp_exampleImage\"></td>";
+                echo "<td colspan=\"2\" rowspan=\"2\"><img src=$name alt=\"作品例\" class=\"logoApp_exampleImage\"></td>";
               }else{
-                echo "<td><img src=\"logoapp/upload/line/$num.gif\" alt=\"作品例\" class=\"logoApp_exampleImage\" style=\"cursor: pointer;\"></td>";
+                echo "<td><img src=$name alt=\"作品例\" class=\"logoApp_exampleImage\" style=\"cursor: pointer;\"></td>";
               }
               $i++;
             }
@@ -191,7 +235,14 @@ $line = mysqli_query($link, "SELECT * FROM `line` ORDER BY `id` DESC");
             $i = 0;
             while($i < 2){
               $num = mysqli_fetch_array($line)[ID];
-              echo "<td><img src=\"logoapp/upload/line/$num.gif\" alt=\"作品例\" class=\"logoApp_exampleImage\" style=\"cursor: pointer;\"></td>";
+              if($num < 1){
+                $num = 1;
+              }
+              $name = "\"logoapp/upload/line/$num.gif\"";
+              if(!file_exists("logoapp/upload/line/$num.gif")){
+                continue;
+              }
+              echo "<td><img src=$name alt=\"作品例\" class=\"logoApp_exampleImage\" style=\"cursor: pointer;\"></td>";
               $i++;
             }
           ?>
@@ -201,7 +252,14 @@ $line = mysqli_query($link, "SELECT * FROM `line` ORDER BY `id` DESC");
             $i = 0;
             while($i < 4){
               $num = mysqli_fetch_array($line)[ID];
-              echo "<td><img src=\"logoapp/upload/line/$num.gif\" alt=\"作品例\" class=\"logoApp_exampleImage\" style=\"cursor: pointer;\"></td>";
+              if($num < 1){
+                $num = 1;
+              }
+              $name = "\"logoapp/upload/line/$num.gif\"";
+              if(!file_exists("logoapp/upload/line/$num.gif")){
+                continue;
+              }
+              echo "<td><img src=$name alt=\"作品例\" class=\"logoApp_exampleImage\" style=\"cursor: pointer;\"></td>";
               $i++;
             }
           ?>
