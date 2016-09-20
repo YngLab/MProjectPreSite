@@ -35,7 +35,7 @@ $content =<<<HTML
       </div>
     </a>
   </div>
-  <a href = "../">
+  <a href = "../index.html">
     <p>トップページに戻る</p>
   </a>
 </div>

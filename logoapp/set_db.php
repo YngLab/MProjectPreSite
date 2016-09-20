@@ -2,7 +2,7 @@
 //echo "database setup...<br>";
 $url = "mysql1501.xserver.jp";
 $user = "miraiproject_usr";
-$pass = "9x2LB7ekf6";
+$pass = "";
 $db = "miraiproject_logoanimation1";
 
 //echo "seting ok.<br>";
